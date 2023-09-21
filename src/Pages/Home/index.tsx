@@ -1,7 +1,7 @@
 import drivergirl from "../../assets/images/drivergirl.jpg"
 import apple from "../../assets/svg/apple.svg"
 import playstore from "../../assets/svg/playstore.svg"
-import vector from "../../assets/svg/vector.svg"
+import vector from "../../assets/svg/Vector.svg"
 
 const btn = [
     {
