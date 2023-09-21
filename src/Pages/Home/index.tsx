@@ -1,8 +1,15 @@
 import drivergirl from "../../assets/images/drivergirl.jpg"
 import apple from "../../assets/svg/apple.svg"
+import suitdriver from "../../assets/images/suitdriver.png"
+import pinkdriver from "../../assets/images/pinkdriver.png"
+import shirtdriver from "../../assets/images/shirtdriver.png"
 import playstore from "../../assets/svg/playstore.svg"
 import vector from "../../assets/svg/Vector.svg"
-import { Carousel, IconButton } from "@material-tailwind/react";
+// import { Carousel, IconButton } from "@material-tailwind/react";
+import Slider from "react-slick"
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
+
 
 
 const btn = [
@@ -20,7 +27,105 @@ const btn = [
     }
 ]
 
+const img = [
+    {
+      id: 1,
+      title: 'Free Rides',
+      description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      brand:true,
+      linkImg:suitdriver,
+    },
+    {
+      id: 2,
+      title: 'Updates',
+      description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      brand:false,
+      linkImg: pinkdriver,
+    },
+    {
+      id: 3,
+      title: 'Commission Free',
+      description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      brand:true,
+      linkImg: shirtdriver
+    },
+    {
+      id: 4,
+      title: 'Updates',
+      description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      brand:false,
+      linkImg:
+        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/s/super-mario-3d-world-plus-bowsers-fury-switch/hero?_a=AJADJWI0',
+    },
+    {
+      id: 5,
+      title: 'Updates',
+      description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      brand:true,
+      linkImg:
+        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/c/cuphead-switch/hero?_a=AJADJWI0',
+    },
+    {
+      id: 6,
+      title: 'Minecraft',
+      description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      brand:false,
+      linkImg:
+        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/m/minecraft-switch/hero?_a=AJADJWI0',
+    },
+    {
+      id: 7,
+      title: 'Updates',
+      description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      brand:true,
+      linkImg: shirtdriver
+    },
+    {
+      id: 8,
+      title: 'Unravel Two',
+      description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      brand:false,
+      linkImg:
+        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/u/unravel-two-switch/hero?_a=AJADJWI0',
+    },
+  ];
+
 export default function index() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow:4,
+        slidesToScroll: 2,
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      };
+    
   return (
     <div className="h-full w-full bg-white " >
        <header className="h-[120vh] bg-neutral">
@@ -31,7 +136,7 @@ export default function index() {
                         <div className=" h-[60%] w-[90%]">
                             <h1> Safe, Simple and Exciting Way to Ride. </h1>
                             <div className="w-[90%] py-4">
-                                <p>Be one out first 100 drivers to get 3 months of commision
+                                <p className="text-center md:text-left lg:text-left xl:text-left">Be one out first 100 drivers to get 3 months of commision
                                     free earnings, when you join our Vroom Family!
                                 </p>
                             </div>
@@ -61,93 +166,47 @@ export default function index() {
                 </div>
             </div>
       </header>
-      {/* <section className="h-[120vh] bg-green-400 w-full flex justify-center items-center">
-         <div className="w-[90%] h-[85%] bg-yellow-300">
+      
+      <section className="h-[120vh] w-full flex justify-center items-center">
+         <div className="w-[90%] h-[85%]">
              <div className="flex">
-                <div className="w-[75%] bg-gray-400">
+                <div className="w-[50%] md:w-[75%] lg:w-[75%] xl:w-[75%]">
                    <h2>Sign up to Recieve</h2>
-                   <p>See what you get once you become a Vroomer</p>
+                   <p >See what you get once you become a Vroomer</p>
                 </div>
-                <div className="w-[25%] flex items-center justify-around  bg-red-400">
-                   <button className="rounded-md bg-white border-2 border-brand600 w-32 p-2">
-                     our Customers
+                <div className="w-[50%] md:w-[25%] lg:w-[25%] xl:w-[25%] flex items-center justify-around">
+                   <button className="rounded-md bg-white border-2 border-brand600 md:w-32 lg:w-32 xl:w-32 md:p-2">
+                    <span className="text-[12px] md:text-md lg:text-md xl:text-md">our Customers</span> 
                    </button>
-                   <button className="rounded-md bg-brand600 border-2 border-brand600 w-32 p-2">
-                     our Customers
+                   <button className="rounded-md bg-brand600 border-2 border-brand600 md:w-32 lg:w-32 xl:w-32 md:p-2">
+                   <span className="text-[12px]">create account</span>
                    </button>
                 </div>
              </div>
             <div>
-            <Carousel
-      className="rounded-xl"
-      prevArrow={({ handlePrev }) => (
-        <IconButton
-          variant="text"
-          color="white"
-          size="lg"
-          onClick={handlePrev}
-          className="!absolute top-2/4 left-4 -translate-y-2/4"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="h-6 w-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-            />
-          </svg>
-        </IconButton>
-      )}
-      nextArrow={({ handleNext }) => (
-        <IconButton
-          variant="text"
-          color="white"
-          size="lg"
-          onClick={handleNext}
-          className="!absolute top-2/4 !right-4 -translate-y-2/4"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="h-6 w-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-            />
-          </svg>
-        </IconButton>
-      )}
-    >
-      <img
-        src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-        alt="image 1"
-        className="h-full w-full object-cover"
-      />
-      <img
-        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-        alt="image 2"
-        className="h-full w-full object-cover"
-      />
-      <img
-        src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-        alt="image 3"
-        className="h-full w-full object-cover"
-      />
-    </Carousel>
+               <Slider {...settings}>
+                {
+                    img.map((item) => {
+                        return(
+                            <div className="card bg-brand400 ">
+                                <div className=" h-[100%]">
+                                    <div className="card-top">
+                                        <img src={item.linkImg}/>
+                                    </div>
+                                    <div className="card-bottom">
+                                        <h3 className="font-medium">{item.title}</h3>
+                                        <span>{item.description}</span>
+                                    </div> 
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+                
+               </Slider>
             </div>
          </div>
-      </section> */}
+      </section>
      
 
     </div>
