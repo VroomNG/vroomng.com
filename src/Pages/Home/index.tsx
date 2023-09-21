@@ -24,7 +24,7 @@ export default function index() {
        <header className="h-[120vh] bg-neutral">
             <div className="flex justify-center pt-[10%] pb-[5%] w-full h-full" >
                 <div className="container flex flex-wrap md:flex-nowrap lg:flex-nowrap xl:flex-nowrap w-[90%]">
-                    <img src={vector} className="z-[100] w-[40%] mt-[160%] md:w-[20%] lg:w-[20%] lg:mt-[30%] lg:ml-[40%] absolute"/>
+                    <img src={vector} className="z-[100] w-[40%] mt-[160%] md:w-[20%] md:mt-[30%] md:ml-[40%] lg:w-[20%]  lg:mt-[30%] lg:ml-[40%] absolute"/>
                     <div className="flex justify-center items-center mt-8 md:mt-0 lg:mt-0 xl:mt-0  w-[100%]  md:w-[55%] lg:w-[55%] xl:w-[55%]">
                         <div className=" h-[60%] w-[90%]">
                             <h1> Safe, Simple and Exciting Way to Ride. </h1>
@@ -33,7 +33,7 @@ export default function index() {
                                     free earnings, when you join our Vroom Family!
                                 </p>
                             </div>
-                            <div className="flex w-[100%] md-w[55%] lg-w[55%] xl-w[55%] justify-between py-4 ml-2 ">
+                            <div className="flex w-[100%] md:w-[55%] lg:w-[55%] xl:w-[55%] justify-between py-4 ml-2 ">
                                 {btn.map((item)=> {
                                     return(
                                         <div key={item.id}>
