@@ -66,6 +66,13 @@ p {
   line-height: 30px;
 }
 
+.label {
+  color: #344054;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
 @media screen and (max-width:640px){
   h1 {
     font-size: 30px;

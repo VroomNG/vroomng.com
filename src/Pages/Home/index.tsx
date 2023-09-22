@@ -4,8 +4,10 @@ import suitdriver from "../../assets/images/suitdriver.png"
 import pinkdriver from "../../assets/images/pinkdriver.png"
 import shirtdriver from "../../assets/images/shirtdriver.png"
 import carman from "../../assets/images/carman.jpg"
+import smile from "../../assets/images/backseat.jpg"
 // import vroom from "../../assets/images/vroom.png"
 import mockup from "../../assets/images/mockup.png"
+import passenger from "../../assets/images/passenger.png"
 import home from "../../assets/images/Home.png"
 import playstore from "../../assets/svg/playstore.svg"
 import vector from "../../assets/svg/Vector.svg"
@@ -13,6 +15,7 @@ import vector from "../../assets/svg/Vector.svg"
 import Slider from "react-slick"
 // import 'slick-carousel/slick/slick.css';
 // import 'slick-carousel/slick/slick-theme.css';
+import { Checkbox, checkbox } from "@material-tailwind/react";
 
 
 
@@ -299,6 +302,94 @@ export default function index() {
                     <img src={home} className="z-[999] mt-20 ml-4 absolute  w-[20%] h-[67%]"/>
                     <img src={mockup} className="object-fill ml-[20%] w-[80%]"/>
                 </div>
+            </div>
+        </div>
+      </section>
+      <section className="h-[70vh] mt-5 flex justify-center items-center">
+        <div className="rounded-xl w-[90%] h-[90%] bg-brand50 flex items-center justify-center">
+            <div className="flex w-[90%] h-[100%]">
+                <div className="w-[50%] flex items-end ">
+                    <img src={passenger} alt="" className="w-[90%]"/>
+                </div>
+                <div className="w-[50%] flex flex-col items-start justify-center">
+                    <div className="w-[80%] ">
+                        <h2 className="py-4">Join 4,000+ Drivers and Riders on Vroom</h2>
+                        <span className="text-[20px] py-4">Get the app and Start riding.</span>
+                        <div className="flex justify-between py-4 mx-1 w-[80%]">
+                        {btn.map((item)=> {
+                                    return(
+                                        <div key={item.id}>
+                                            <button  className="bg-black flex w-36 md:w-40 text-white rounded-lg ">
+                                                <span className="w-[30%] p-2 flex items-center justify-center">
+                                                    <img src={item.icon} width={"30px"}/>
+                                                </span>
+                                                <span className="w-[60] flex flex-col items-center justify-center">
+                                                    <p className="text-[10px] md:text-xm lg:text-xm pt-1 md:pt-0 lg:pt-0 xl:pt-0 md:h-[20px] lg:h-[20px] xl:h-[20px]">{item.title}</p>
+                                                    <p className="text-sm font-medium">{item.store}</p>
+                                                </span>    
+                                            </button>
+                                        </div>
+                                    )
+                                })}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section className="h-[120vh] flex justify-center items-center">
+        <div className="w-[90%] h-[80%] flex ">
+            <div className="w-[55%] flex items-center justify-center">
+                    <div className="contactform w-[75%] h-[95%]">
+                      <h2>Get in touch</h2>
+                      <p>Our  team would love to hear from you.</p>
+                      <div className="">
+                        <form>
+                            <div className="name flex justify-between pt-4">
+                                <div className="w-[50%] ">
+                                    <div className="label py-2">First name</div>
+                                    <input placeholder="First name" className="border-2 rounded-lg p-2 w-[95%] px-4 border-gray300  bg-transparent" />
+                                </div>
+                                <div className="w-[50%]">
+                                    <div className="label py-2 px-4">Last name</div>
+                                    <div className="flex justify-end">
+                                        <input placeholder="First name" className="border-2 rounded-lg p-2 w-[95%] px-4 border-gray300  bg-transparent" />
+                                    </div>
+                                </div> 
+                            </div>
+                            <div className="pt-2">
+                                <div className="label py-2">Email</div>
+                                <div className="w-[100%] ">
+                                    <input placeholder="you@company.com" className="border-2 rounded-lg p-2 px-4 w-[100%] border-gray300  bg-transparent" />
+                                </div>
+                            </div>
+                            <div className="pt-2">
+                                <div className="label py-2">Phone Number</div>
+                                <div className="w-[100%] ">
+                                    <input placeholder="First name" className="border-2 rounded-lg p-2 px-4 w-[100%] border-gray300  bg-transparent" />
+                                </div>
+                            </div>
+                            <div className="pt-2">
+                                <div className="label py-2">Message</div>
+                                <div className="w-[100%] h-[20%]">
+                                    <input placeholder="Leave us a message..." className="border-2 rounded-lg pb-12 px-4 w-[100%] h-[100px] border-gray300  bg-transparent" />
+                                </div>
+                            </div>
+                            <div className="flex items-center ">
+                                <Checkbox color="indigo"  crossOrigin={undefined} />
+                                You agree to our friendly <a href="#"> privacy policy</a>.
+                            </div>
+                            <div className="btn">
+                                <button className="bg-brand600 text-white p-2 w-[100%] rounded-lg">
+                                    send a message
+                                </button>
+                            </div>
+                        </form>
+                      </div>
+                    </div>
+            </div>
+            <div className="w-[45%]">
+                    <img src={smile} className="object-cover h-[100%] w-[100%]"/>
             </div>
         </div>
       </section>
