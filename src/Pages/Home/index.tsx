@@ -3,6 +3,10 @@ import apple from "../../assets/svg/apple.svg"
 import suitdriver from "../../assets/images/suitdriver.png"
 import pinkdriver from "../../assets/images/pinkdriver.png"
 import shirtdriver from "../../assets/images/shirtdriver.png"
+import carman from "../../assets/images/carman.jpg"
+// import vroom from "../../assets/images/vroom.png"
+import mockup from "../../assets/images/mockup.png"
+import home from "../../assets/images/Home.png"
 import playstore from "../../assets/svg/playstore.svg"
 import vector from "../../assets/svg/Vector.svg"
 // import { Carousel, IconButton } from "@material-tailwind/react";
@@ -92,7 +96,7 @@ const img = [
 
 export default function index() {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow:4,
@@ -167,7 +171,7 @@ export default function index() {
             </div>
       </header>
       
-      <section className="h-[120vh] w-full flex justify-center items-center">
+      <section className="h-[110vh] w-full flex justify-center items-center">
          <div className="w-[90%] h-[85%]">
              <div className="flex">
                 <div className="w-[50%] md:w-[75%] lg:w-[75%] xl:w-[75%]">
@@ -206,6 +210,97 @@ export default function index() {
                </Slider>
             </div>
          </div>
+      </section>
+
+      <section className="h-[110vh] flex justify-center items-center ">
+      <div className="w-[90%] h-[90%] flex flex-col">
+             <div className="flex  h-[20%]">
+                <div className="w-[50%] md:w-[75%] lg:w-[75%] xl:w-[75%]">
+                    <h4>Our story</h4>
+                   <h2>We’re just getting started</h2>
+                   <p >We’ve already have over 400 happy Vroomers, making their lives easier here.</p>
+                </div>
+             </div>
+            <div className=" h-[70%] mt-12" >
+                <div className="flex w-[100%]">
+                   <div className="w-[50%]">
+                    <img src={carman} />
+                   </div>
+                   <div className="w-[50%] p-10">
+                    <p className="text-[16px] text-justify">
+                        Sagittis et eu at elementum, quis in. Proin praesent volutpat
+                         egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac. Auctor rutrum lacus malesuada massa ornare et. Vulputate consectetur ac ultrices at diam dui eget fringilla tincidunt. Arcu sit dignissim massa erat cursus vulputate gravida id. Sed quis auctor vulputate hac elementum gravida cursus dis.
+                        Lectus id duis vitae porttitor enim gravida morbi.
+                        Eu turpis posuere semper feugiat volutpat elit, ultrices suspendisse. Auctor vel in vitae placerat.
+                        Suspendisse maecenas ac donec scelerisque diam sed est duis purus.
+                        Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor.
+                    </p>
+                   </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section className="h-[100vh] flex justify-center items-center ">
+      <div className="w-[100%] h-[100%]">
+             <div className="flex justify-center h-[20%]">
+                <div className="w-[90%] ">
+                    <h4>Get RIdes fasterr</h4>
+                   <h2>How it works</h2>
+                   {/* <p >We’ve already have over 400 happy Vroomers, making their lives easier here.</p> */}
+                </div>
+             </div>
+            <div className=" h-[80%] mt-10 flex" >
+                <div className="w-[50%] flex items-center justify-center">
+                    <div className="mx-4">
+                        <div className="w-1 bg-purple-800 h-[150px]"></div>
+                        <div className="w-1 bg-gray-400 h-[150px] "></div>
+                        <div className="w-1 bg-gray-400 h-[150px]"></div>
+                    </div>
+                   <div className=" w-[85%] h-[90%]">
+                    <span>
+                        <div className="py-1">
+                            <h5>Select your destination</h5>
+                        </div>   
+                        <div className="text-gray600 font-sm py-2 w-[90%]">
+                            Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                        </div>
+                        <span>
+                        <h5>Learn more</h5> 
+
+                        </span>
+                    </span>
+                    <span>
+                        <div className="py-1">
+                            <h5>Request a ride</h5>
+                        </div>   
+                        <div className="text-gray600 font-sm py-2 w-[90%]">
+                            Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                        </div>
+                        <span>
+                        <h5>Learn more</h5> 
+
+                        </span>
+                    </span>
+                    <span>
+                        <div className="py-1">
+                            <h5>Vrooooooom!!</h5>
+                        </div>   
+                        <div className="text-gray600 font-sm py-2 w-[90%]">
+                            Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                        </div>
+                        <span>
+                        <h5>Learn more</h5> 
+
+                        </span>
+                    </span>
+                   </div>
+                </div>
+                <div className="w-[50%] flex">
+                    <img src={home} className="z-[999] mt-20 ml-4 absolute  w-[20%] h-[67%]"/>
+                    <img src={mockup} className="object-fill ml-[20%] w-[80%]"/>
+                </div>
+            </div>
+        </div>
       </section>
      
 
