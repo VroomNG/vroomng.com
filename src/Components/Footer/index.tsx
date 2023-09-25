@@ -8,7 +8,7 @@ export default function index() {
              <div className="flex w-full items-center h-[40%] py-4 ">
                 <div className="w-[50%] text-white md:w-[80%] lg:w-[50%] xl:w-[80%]">
                    <h2 className="text-white">Ride with Vroom Today</h2>
-                   <p >We’ve already have over 400 happy Vroomers, making their lives easier here.</p>
+                   <p>We’ve already have over 400 happy Vroomers, making their lives easier here.</p>
                 </div>
                 <div className="w-[50%] md:w-[20%] lg:w-[5%] xl:w-[25%]  flex items-center py-4 justify-between">
                    <button className="rounded-md bg-white border-2 border-brand600 md:w-32 lg:w-32 xl:w-32 md:p-2">

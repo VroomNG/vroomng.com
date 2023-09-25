@@ -15,7 +15,7 @@ import vector from "../../assets/svg/Vector.svg"
 import Slider from "react-slick"
 // import 'slick-carousel/slick/slick.css';
 // import 'slick-carousel/slick/slick-theme.css';
-import { Checkbox, checkbox } from "@material-tailwind/react";
+import { Checkbox } from "@material-tailwind/react";
 
 
 
