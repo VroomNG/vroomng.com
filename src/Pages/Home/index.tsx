@@ -112,7 +112,7 @@ export default function index() {
               slidesToShow: 2,
               slidesToScroll: 2,
               infinite: true,
-              dots: true,
+              dots: false,
             },
           },
           {
@@ -132,25 +132,30 @@ export default function index() {
           },
         ],
       };
+
+    //   const cardstyle = {
+    //     backgroundColor: '#000000',
+    //   }
     
   return (
-    <div className="h-full w-full bg-white " >
-       <header className="h-[120vh] bg-neutral">
-            <div className="flex justify-center pt-[10%] pb-[5%] w-full h-full" >
-                <div className="container flex flex-wrap md:flex-nowrap lg:flex-nowrap xl:flex-nowrap w-[90%]">
-                    <img src={vector} className="z-[100] w-[40%] mt-[160%] md:w-[20%] md:mt-[30%] md:ml-[40%] lg:w-[20%]  lg:mt-[30%] lg:ml-[40%] absolute"/>
-                    <div className="flex justify-center items-center mt-8 md:mt-0 lg:mt-0 xl:mt-0  w-[100%]  md:w-[55%] lg:w-[55%] xl:w-[55%]">
-                        <div className=" h-[60%] w-[90%]">
-                            <h1> Safe, Simple and Exciting Way to Ride. </h1>
-                            <div className="w-[90%] py-4">
-                                <p className="text-center md:text-left lg:text-left xl:text-left">Be one out first 100 drivers to get 3 months of commision
+    <div className="h-full w-full" >
+       <header className="h-[110vh] md:h-[110vh] lg:h-[120vh] xl:h-[120vh] 2xl:h-[120vh] bg-neutral">
+            <div className="flex justify-center pt-[10%] pb-[5%] w-full h-full">
+                <div className="container flex flex-wrap lg:flex-nowrap xl:flex-nowrap w-[90%]">
+                    <img src={vector} className="hidden lg:block z-[100] w-[40%] mt-[160%] md:w-[20%] md:mt-[40%] md:ml-[40%] lg:w-[20%]  lg:mt-[30%] lg:ml-[40%] absolute"/>
+                    <div className="flex md:justify-center items-center mt-8 md:mt-0 lg:mt-0 xl:mt-0 w-[100%] md:w-[100%] lg:w-[55%] xl:w-[55%]">
+                        <div className=" h-[90%] flex flex-col justify-center w-[100%] md:w-[90%] md:h-[60%] mt-12 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
+                            <h1 className="text-center lg:text-left"> Safe, Simple and Exciting Way to Ride. </h1>
+                            <div className="w-[100%] py-4 ">
+                                <p className="text-center lg:text-left">Be one out first 100 drivers to get 3 months of commision
                                     free earnings, when you join our Vroom Family!
                                 </p>
                             </div>
-                            <div className="flex w-[100%] md:w-[55%] lg:w-[55%] xl:w-[55%] justify-between py-4 ml-2 ">
+                            <div className="flex justify-center lg:justify-between xl:justify-between
+                             2xl:justify-between w-full lg:w-[55%] xl:w-[55%] mt-6 md:mt-0 md:py-4 lg:py-4 xl:py-4  ">
                                 {btn.map((item)=> {
                                     return(
-                                        <div key={item.id}>
+                                        <div key={item.id} className=" mx-4 lg:mx-0 xl:mx-0 2xl:mx-0 ">
                                             <button  className="bg-black flex w-36 md:w-40 text-white rounded-lg ">
                                                 <span className="w-[30%] p-2 flex items-center justify-center">
                                                     <img src={item.icon} width={"30px"}/>
@@ -167,40 +172,43 @@ export default function index() {
                             </div>
                         </div>
                     </div>
-                    <div className=" w-[100%] mt-16 md:mt-0 lg:mt-0 xl:mt-0 md:w-[45%] lg:w-[45%] xl:w-[45%]">
+                    <div className=" w-[100%] mt-16 md:mt-0 lg:mt-0 xl:mt-0 md:w-[100%] lg:w-[45%] xl:w-[45%]">
                         <img src={drivergirl} className="h-[100%] w-[100%] " /> 
                     </div>
                 </div>
             </div>
       </header>
-      
-      <section className="h-[110vh] w-full flex justify-center items-center">
-         <div className="w-[90%] h-[85%]">
-             <div className="flex">
-                <div className="w-[50%] md:w-[75%] lg:w-[75%] xl:w-[75%]">
+       <section className="h-[110vh] md:h-[80vh] lg:h-[110vh] xl:h-[110vh] 2xl:h-[110vh] w-full flex justify-center items-center ">
+         <div className="w-[90%] h-[90%] md:h-[85%] flex flex-col justify-center">
+             <div className="flex flex-col  md:flex-row h-[30%] md:h-[10%] lg:md-h[30%] xl:h-[30%] 2xl:h-[30%]">
+                <div className="w-[100%] md:w-[50%] lg:w-[75%] xl:w-[75%] 2xl:w-[75%] ">
                    <h2>Sign up to Recieve</h2>
                    <p >See what you get once you become a Vroomer</p>
                 </div>
-                <div className="w-[50%] md:w-[25%] lg:w-[25%] xl:w-[25%] flex items-center justify-around">
-                   <button className="rounded-md bg-white border-2 border-brand600 md:w-32 lg:w-32 xl:w-32 md:p-2">
-                    <span className="text-[12px] md:text-md lg:text-md xl:text-md">our Customers</span> 
-                   </button>
-                   <button className="rounded-md bg-brand600 border-2 border-brand600 md:w-32 lg:w-32 xl:w-32 md:p-2">
-                   <span className="text-[12px]">create account</span>
-                   </button>
+                <div className="w-[100%] md:w-[50%] lg:w-[25%] xl:w-[25%] 2xl:w-[25%]  flex flex-col md:flex-row md:pl-16 lg:pl-14  xl:pl-16 2xl:pl-14 items-center py-4 lg:mx-6 justify-evenly mt-2">
+                            <div className="w-[100%] py-1 flex  md:justify-end lg:justify-center xl:justify-end 2x:justify-end xl:mr-2">
+                              <button className="rounded-md bg-white border-2 border-gray500 w-full p-2 md:w-32 lg:w-32 xl:w-32 md:p-2">
+                                <span className="text-[14px] font-medium md:text-md lg:text-md xl:text-md">Create account</span> 
+                              </button>
+                            </div>
+                            <div className="w-[100%] py-1 md:ml-2">
+                                <button className="rounded-md bg-brand600 border-2 border-brand600 w-full p-2 text-white md:w-32 lg:w-32 xl:w-32 md:p-2">
+                                  <span className="text-[14px] font-medium">Our Customers</span>
+                                </button>
+                            </div>
                 </div>
              </div>
-            <div>
+            <div className="h-[70%] xl:h-[90%]">
                <Slider {...settings}>
                 {
                     img.map((item) => {
                         return(
-                            <div className="card bg-brand400 ">
+                            <div className={item.brand==true? "card bg-brand400" : "card bg-brand600"}>
                                 <div className=" h-[100%]">
                                     <div className="card-top">
                                         <img src={item.linkImg}/>
                                     </div>
-                                    <div className="card-bottom">
+                                    <div className={item.brand==true? "card-bottom bg-brand200" : "card-bottom bg-brand300"}>
                                         <h3 className="font-medium">{item.title}</h3>
                                         <span>{item.description}</span>
                                     </div> 
@@ -215,21 +223,21 @@ export default function index() {
          </div>
       </section>
 
-      <section className="h-[110vh] flex justify-center items-center ">
-      <div className="w-[90%] h-[90%] flex flex-col">
-             <div className="flex  h-[20%]">
-                <div className="w-[50%] md:w-[75%] lg:w-[75%] xl:w-[75%]">
+      <section className="h-[110vh] flex justify-center items-center  bg-green-50">
+      <div className="w-[90%] h-[90%] flex flex-col  2xl:flex-row">
+             <div className="flex h-[20%]">
+                <div className="w-[100%] md:w-[75%] lg:w-[75%] xl:w-[75%]">
                     <h4>Our story</h4>
                    <h2>We’re just getting started</h2>
                    <p >We’ve already have over 400 happy Vroomers, making their lives easier here.</p>
                 </div>
              </div>
-            <div className=" h-[70%] mt-12" >
-                <div className="flex w-[100%]">
-                   <div className="w-[50%]">
+            <div className=" h-[70%]  xl:mt-12" >
+                <div className=" flex flex-col lg:flex-row xl:flex-row  w-[100%]">
+                   <div className="w-[100%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%]">
                     <img src={carman} />
                    </div>
-                   <div className="w-[50%] p-10">
+                   <div className="w-[100%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] pt-16 lg:p-10 xl:p-10 2xl:p-10">
                     <p className="text-[16px] text-justify">
                         Sagittis et eu at elementum, quis in. Proin praesent volutpat
                          egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac. Auctor rutrum lacus malesuada massa ornare et. Vulputate consectetur ac ultrices at diam dui eget fringilla tincidunt. Arcu sit dignissim massa erat cursus vulputate gravida id. Sed quis auctor vulputate hac elementum gravida cursus dis.
@@ -243,13 +251,13 @@ export default function index() {
             </div>
         </div>
       </section>
+    
       <section className="h-[100vh] flex justify-center items-center ">
       <div className="w-[100%] h-[100%]">
              <div className="flex justify-center h-[20%]">
                 <div className="w-[90%] ">
                     <h4>Get RIdes fasterr</h4>
                    <h2>How it works</h2>
-                   {/* <p >We’ve already have over 400 happy Vroomers, making their lives easier here.</p> */}
                 </div>
              </div>
             <div className=" h-[80%] mt-10 flex" >
@@ -305,6 +313,7 @@ export default function index() {
             </div>
         </div>
       </section>
+       
       <section className="h-[70vh] mt-5 flex justify-center items-center">
         <div className="rounded-xl w-[90%] h-[90%] bg-brand50 flex items-center justify-center">
             <div className="flex w-[90%] h-[100%]">
@@ -337,7 +346,7 @@ export default function index() {
             </div>
         </div>
       </section>
-      <section className="h-[120vh] flex justify-center items-center">
+       <section className="h-[120vh] flex justify-center items-center">
         <div className="w-[90%] h-[80%] flex ">
             <div className="w-[55%] flex items-center justify-center">
                     <div className="contactform w-[75%] h-[95%]">

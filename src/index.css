@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   font-family: Inter, system-ui,open-sans, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -18,14 +14,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   
-}
-
-
-
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -73,24 +61,10 @@ p {
   font-weight: 600;
 }
 
-@media screen and (max-width:640px){
-  h1 {
-    font-size: 30px;
-    line-height: 40PX;
-    letter-spacing: 2px;
-    text-align: center;
-  }
-  h2 {
-    font-size: 20px;
-
-  }
-  p {
-    font-size: 16px;
-    line-height: 18px;
-  }
-}
 
 
+
+/* carousel */
 
 .slick-slide > div {
   margin: 0 10px;
@@ -131,8 +105,7 @@ p {
   margin-top: 20px;
   height: 45%;
   border-width: 1px;
-  background-color: rgb(91, 208, 255)
-  ;
+  /* background-color: #3b2358; */
   padding: 20px;
 }
 
@@ -173,4 +146,71 @@ p {
 .slick-prev:before {
   margin-left: 60%;
   z-index: 9999;
+}
+
+
+
+/* 
+
+
+WELCOME TO MEDIA SCREENS
+
+
+*/
+
+
+
+@media screen and (max-width:640px){
+  h1 {
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: 2px;
+    
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    color: #101828;
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #6941C6;
+  }
+  p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .slick-next:before {
+    margin-left: -11em;
+  }
+
+  .slick-next:before, .slick-prev:before {
+    margin-top: 280px;
+  }
+ .card {
+  height: 450px;
+ }
+}
+
+@media screen and (max-width:375px) {
+  .card {
+    height: 375px;
+  }
+  .slick-next:before, .slick-prev:before {
+    margin-top: 225px;
+  }
+  .slick-next:before {
+    margin-left: -10em;
+  }
+}
+
+@media screen and (min-width:640px) and (max-width:920px) {
+  .slick-next:before {
+    margin-left: -22em;
+  }
 }
