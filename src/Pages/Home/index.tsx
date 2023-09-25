@@ -260,8 +260,8 @@ export default function index() {
                    <h2>How it works</h2>
                 </div>
              </div>
-            <div className=" h-[80%] mt-10 flex" >
-                <div className="w-[50%] flex items-center justify-center">
+            <div className=" h-[80%] mt-10 flex flex-col xl:flex-row" >
+                <div className="w-[100%] xl:w-[50%] flex items-center justify-center">
                     <div className="mx-4">
                         <div className="w-1 bg-purple-800 h-[150px]"></div>
                         <div className="w-1 bg-gray-400 h-[150px] "></div>
@@ -306,9 +306,9 @@ export default function index() {
                     </span>
                    </div>
                 </div>
-                <div className="w-[50%] flex">
+                <div className="w-[100%]  xl:w-[50%] flex">
                     <img src={home} className="z-[999] mt-20 ml-4 absolute  w-[20%] h-[67%]"/>
-                    <img src={mockup} className="object-fill ml-[20%] w-[80%]"/>
+                    <img src={mockup} className="object-fill ml-[20%] w-[80%] hidden md:block lg:block xl:block"/>
                 </div>
             </div>
         </div>
@@ -346,9 +346,9 @@ export default function index() {
             </div>
         </div>
       </section>
-       <section className="h-[120vh] flex justify-center items-center">
-        <div className="w-[90%] h-[80%] flex ">
-            <div className="w-[55%] flex items-center justify-center">
+       <section className="h-[120vh] flex flex-col justify-center items-center">
+        <div className="w-[90%] h-[80%] flex flex-col xl:flex-row">
+            <div className="w-[100%] xl:w-[55%] flex items-center justify-center">
                     <div className="contactform w-[75%] h-[95%]">
                       <h2>Get in touch</h2>
                       <p>Our  team would love to hear from you.</p>
@@ -397,7 +397,7 @@ export default function index() {
                       </div>
                     </div>
             </div>
-            <div className="w-[45%]">
+            <div className="w-[100%]xl:w-[45%]">
                     <img src={smile} className="object-cover h-[100%] w-[100%]"/>
             </div>
         </div>
