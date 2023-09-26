@@ -345,7 +345,7 @@ export default function index() {
             </div>
         </div>
       </section>
-       <section className="h-[120vh] md:h-[70vh] flex flex-col justify-center items-center">
+       <section className="h-[120vh] md:h-[70vh] lg:h-[120vh] xl:h-[120vh] 2xl:h-[120vh] flex flex-col justify-center items-center">
         <div className="w-[90%] h-[80%] flex flex-col xl:flex-row">
             <div className="w-[100%] h-[100%] md:h-[60%] lg:h-[100%] xl:h-[100%]  xl:w-[50%] flex items-center justify-center ">
                     <div className="contactform w-[75%] h-[95%]">
