@@ -140,9 +140,9 @@ export default function index() {
   return (
     <div className="h-full w-full" >
        <header className="h-[110vh] md:h-[110vh] lg:h-[120vh] xl:h-[120vh] 2xl:h-[120vh] bg-neutral">
-            <div className="flex justify-center pt-[10%] pb-[5%] w-full h-full">
+            <div className="flex justify-center pt-[10%] xl:pt-[8%] 2xl:pt-0 overflow-hidden pb-[5%] w-full h-full">
                 <div className="container flex flex-wrap lg:flex-nowrap xl:flex-nowrap w-[90%]">
-                    <img src={vector} className="hidden lg:block z-[100] w-[40%] mt-[160%] md:w-[20%] md:mt-[40%] md:ml-[40%] lg:w-[20%]  lg:mt-[30%] lg:ml-[40%] absolute"/>
+                    <img src={vector} className="hidden lg:block z-[100] w-[40%] mt-[160%] md:w-[20%] md:mt-[40%] md:ml-[40%] lg:w-[20%]  lg:mt-[40%] lg:ml-[40%] xl:mt-[35%] absolute"/>
                     <div className="flex md:justify-center items-center mt-8 md:mt-0 lg:mt-0 xl:mt-0 w-[100%] md:w-[100%] lg:w-[55%] xl:w-[55%]">
                         <div className=" h-[90%] flex flex-col justify-center w-[100%] md:w-[90%] md:h-[60%] mt-12 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
                             <h1 className="text-center lg:text-left"> Safe, Simple and Exciting Way to Ride. </h1>
@@ -172,8 +172,8 @@ export default function index() {
                             </div>
                         </div>
                     </div>
-                    <div className=" w-[100%] mt-16 md:mt-0 lg:mt-0 xl:mt-0 md:w-[100%] lg:w-[45%] xl:w-[45%]">
-                        <img src={drivergirl} className="h-[100%] w-[100%] " /> 
+                    <div className=" w-[100%] flex items-center mt-16 md:mt-0 lg:mt-0 xl:mt-0 lg:w-[45%] xl:w-[45%] 2xl:w-[45%] xl:h-[100%]">
+                    <img src={drivergirl} className="object-cover lg:h-[36rem] lg:w-[34rem] xl:h-[36rem] xl:w-[34rem] 2xl:h-[38rem] 2xl:w-[34rem] "/>
                     </div>
                 </div>
             </div>
@@ -252,16 +252,16 @@ export default function index() {
         </div>
       </section>
     
-      <section className="h-[100vh] flex justify-center items-center ">
+      <section className="h-[120vh] xl:h-[100vh] flex justify-center items-center ">
       <div className="w-[100%] h-[100%]">
-             <div className="flex justify-center h-[20%]">
-                <div className="w-[90%] ">
-                    <h4>Get RIdes fasterr</h4>
+             <div className="flex justify-center w-full h-[10%] xl:h-[20%]">
+                <div className="w-[90%] flex-col justify-center ">
+                    <h4>Get RIdes faster</h4>
                    <h2>How it works</h2>
                 </div>
              </div>
-            <div className=" h-[80%] mt-10 flex flex-col xl:flex-row" >
-                <div className="w-[100%] xl:w-[50%] flex items-center justify-center">
+            <div className=" h-[80%] flex flex-col xl:flex-row" >
+                <div className="w-[100%] h-[60%] xl:w-[50%] xl:h-[100%] flex items-center justify-center">
                     <div className="mx-4">
                         <div className="w-1 bg-purple-800 h-[150px]"></div>
                         <div className="w-1 bg-gray-400 h-[150px] "></div>
@@ -306,22 +306,22 @@ export default function index() {
                     </span>
                    </div>
                 </div>
-                <div className="w-[100%]  xl:w-[50%] flex">
-                    <img src={home} className="z-[999] mt-20 ml-4 absolute  w-[20%] h-[67%]"/>
-                    <img src={mockup} className="object-fill ml-[20%] w-[80%] hidden md:block lg:block xl:block"/>
+                <div className="w-[100%] h-[40%] xl:h-[100%] xl:w-[50%] flex xl:block items-center justify-center  ">
+                    <img src={home} className="z-[999] object-cover md:hidden :w-48 xl:block xl:mt-[6rem] xl:ml-8 xl:absolute xl:w-[20%] xl:h-[65%]"/>
+                    <img src={mockup} className=" ml-[20%] h-[100%] w-[80%] hidden md:block lg:block xl:block"/>
                 </div>
             </div>
         </div>
       </section>
        
-      <section className="h-[70vh] mt-5 flex justify-center items-center">
-        <div className="rounded-xl w-[90%] h-[90%] bg-brand50 flex items-center justify-center">
-            <div className="flex w-[90%] h-[100%]">
-                <div className="w-[50%] flex items-end ">
-                    <img src={passenger} alt="" className="w-[90%]"/>
+      <section className="h-[80vh] mt-5 flex justify-center items-center">
+        <div className="rounded-xl w-[90%] h-[90%] bg-brand400 flex items-center justify-center">
+            <div className="flex flex-col lg:flex-row xl:flex-row w-[90%] h-[100%]">
+                <div className="w-[100%] h-[50%]  order-2  lg:w-[50%] lg:h-[100%]  xl:w-[50%] xl:h-[100%] lg:order-1 xl:order-1  flex items-center justify-center lg:justify-start xl:justify-start lg:items-end xl:items-end  ">
+                    <img src={passenger} alt="" className="w-[90%] md:w-[34rem] lg:w-[30rem] xl:w-[32rem] object-cover"/>
                 </div>
-                <div className="w-[50%] flex flex-col items-start justify-center">
-                    <div className="w-[80%] ">
+                <div className="w-[100%] h-[50%] order-1 lg:order-2 xl:order-2 lg:w-[50%] lg:h-[100%] xl:w-[50%] xl:h-[100%]  flex flex-col items-start justify-center">
+                    <div className="w-[100%] lg:w-[80%] ">
                         <h2 className="py-4">Join 4,000+ Drivers and Riders on Vroom</h2>
                         <span className="text-[20px] py-4">Get the app and Start riding.</span>
                         <div className="flex justify-between py-4 mx-1 w-[80%]">
@@ -348,7 +348,7 @@ export default function index() {
       </section>
        <section className="h-[120vh] flex flex-col justify-center items-center">
         <div className="w-[90%] h-[80%] flex flex-col xl:flex-row">
-            <div className="w-[100%] xl:w-[55%] flex items-center justify-center">
+            <div className="w-[100%] xl:w-[50%] flex items-center justify-center lg:justify-start lg:pl-12 xl:justify-start xl:pl-12">
                     <div className="contactform w-[75%] h-[95%]">
                       <h2>Get in touch</h2>
                       <p>Our  team would love to hear from you.</p>
@@ -397,8 +397,8 @@ export default function index() {
                       </div>
                     </div>
             </div>
-            <div className="w-[100%]xl:w-[45%]">
-                    <img src={smile} className="object-cover h-[100%] w-[100%]"/>
+            <div className="w-[100%] xl:w-[50%]">
+                <img src={smile} className="object-cover h-[100%] w-[100%]"/>
             </div>
         </div>
       </section>
