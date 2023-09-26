@@ -2,30 +2,34 @@ import logo from "../../assets/icons/vroom.svg"
 
 export default function index() {
   return (
-    <div className='h-[80vh] w-full bg-brand600 flex justify-center items-center'>
+    <div className=' h-[100vh] lg:h-[80vh] xl:h-[80vh] w-full bg-brand600 flex justify-center items-center'>
         <div className=' h-[80%] w-[90%]'>
         <div className="w-[100%] h-[90%]">
-             <div className="flex w-full items-center h-[40%] py-4 ">
-                <div className="w-[50%] text-white md:w-[80%] lg:w-[50%] xl:w-[80%]">
+             <div className="flex flex-col lg:flex-row xl:flex-row w-full items-center h-[40%] py-4 ">
+                <div className="w-[100%] text-white md:w-[80%] lg:w-[50%] xl:w-[80%]">
                    <h2 className="text-white">Ride with Vroom Today</h2>
                    <p>We’ve already have over 400 happy Vroomers, making their lives easier here.</p>
                 </div>
-                <div className="w-[50%] md:w-[20%] lg:w-[5%] xl:w-[25%]  flex items-center py-4 justify-between">
-                   <button className="rounded-md bg-white border-2 border-brand600 md:w-32 lg:w-32 xl:w-32 md:p-2">
-                    <span className="text-[12px] md:text-md lg:text-md xl:text-md">Learn more</span> 
-                   </button>
-                   <button className="rounded-md bg-brand400 border-2 border-brand400 md:w-32 lg:w-32 xl:w-32 md:p-2">
-                   <span className="text-[12px]">Get Started</span>
-                   </button>
+                <div className="w-[100%] md:w-[50%] lg:w-[25%] xl:w-[25%] 2xl:w-[25%]  flex flex-col md:flex-row md:pl-16 lg:pl-14  xl:pl-16 2xl:pl-14 items-center py-4 lg:mx-6 justify-evenly mt-2">
+                            <div className="w-[100%] py-1 flex  md:justify-end lg:justify-center xl:justify-end 2x:justify-end xl:mr-2">
+                              <button className="rounded-md bg-white border-2 border-gray500 w-full p-2 md:w-32 lg:w-32 xl:w-32 md:p-2">
+                                <span className="text-[14px] font-medium md:text-md lg:text-md xl:text-md">Create account</span> 
+                              </button>
+                            </div>
+                            <div className="w-[100%] py-1 md:ml-2">
+                                <button className="rounded-md bg-brand400 border-2 border-brand400 w-full p-2 text-white md:w-32 lg:w-32 xl:w-32 md:p-2">
+                                  <span className="text-[14px] font-medium">Our Customers</span>
+                                </button>
+                            </div>
                 </div>
              </div>
-             <div className=" h-[50%] border-t-2 border-b-2 flex  items-center border-gray600">
+             <div className=" h-[50%]  border-t-2 border-b-2 flex flex-col md:flex-row lg:flex-row xl:flex-row  items-center border-gray600">
                 <div className=" h-[80%] w-[100%]  py-4  px-4 flex ">
-                        <div className="w-[50%]">
+                        <div className=" w-[100%] lg:w-[50%] xl:w-[50%]">
                           <div className="bg-white p-2 w-32">
                            <img src={logo}/> 
                            </div>
-                           <div className="w-[50%] py-3">
+                           <div className="w-[100%] lg:w-[50%] xl:w-[50%] py-3">
                             <h6 className="text-white">Get around with ease and be the best version of yourself that you can be.</h6>
                            </div>
                         </div>
