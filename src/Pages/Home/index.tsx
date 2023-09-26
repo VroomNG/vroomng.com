@@ -5,12 +5,13 @@ import pinkdriver from "../../assets/images/pinkdriver.png"
 import shirtdriver from "../../assets/images/shirtdriver.png"
 import carman from "../../assets/images/carman.jpg"
 import smile from "../../assets/images/backseat.jpg"
-// import vroom from "../../assets/images/vroom.png"
+import vroomer from "../../assets/images/vroomer.jpg"
 import mockup from "../../assets/images/mockup.png"
+import handsomeguy from "../../assets/images/handsomeguy.jpg"
 import passenger from "../../assets/images/passenger.png"
 import home from "../../assets/images/Home.png"
 import playstore from "../../assets/svg/playstore.svg"
-import vector from "../../assets/svg/Vector.svg"
+// import vector from "../../assets/svg/Vector.svg"
 // import { Carousel, IconButton } from "@material-tailwind/react";
 import Slider from "react-slick"
 // import 'slick-carousel/slick/slick.css';
@@ -61,40 +62,38 @@ const img = [
       title: 'Updates',
       description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
       brand:false,
-      linkImg:
-        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/s/super-mario-3d-world-plus-bowsers-fury-switch/hero?_a=AJADJWI0',
+      linkImg: vroomer 
     },
     {
       id: 5,
       title: 'Updates',
       description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
       brand:true,
-      linkImg:
-        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/c/cuphead-switch/hero?_a=AJADJWI0',
+      linkImg: handsomeguy,
     },
+    // {
+    //   id: 6,
+    //   title: 'Minecraft',
+    //   description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    //   brand:false,
+    //   linkImg:
+    //     'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/m/minecraft-switch/hero?_a=AJADJWI0',
+    // },
     {
       id: 6,
-      title: 'Minecraft',
-      description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      brand:false,
-      linkImg:
-        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/m/minecraft-switch/hero?_a=AJADJWI0',
-    },
-    {
-      id: 7,
       title: 'Updates',
       description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
       brand:true,
       linkImg: shirtdriver
     },
-    {
-      id: 8,
-      title: 'Unravel Two',
-      description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      brand:false,
-      linkImg:
-        'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/u/unravel-two-switch/hero?_a=AJADJWI0',
-    },
+    // {
+    //   id: 8,
+    //   title: 'Unravel Two',
+    //   description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    //   brand:false,
+    //   linkImg:
+    //     'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/u/unravel-two-switch/hero?_a=AJADJWI0',
+    // },
   ];
 
 export default function index() {
@@ -139,10 +138,10 @@ export default function index() {
     
   return (
     <div className="h-full w-full" >
-       <header className="h-[110vh] md:h-[110vh] lg:h-[120vh] xl:h-[120vh] 2xl:h-[120vh] bg-neutral">
+       <header className="pattern h-[110vh] md:h-[110vh] lg:h-[120vh] xl:h-[120vh] 2xl:h-[120vh]">
             <div className="flex justify-center pt-[10%] xl:pt-[8%] 2xl:pt-0 overflow-hidden pb-[5%] w-full h-full">
                 <div className="container flex flex-wrap lg:flex-nowrap xl:flex-nowrap w-[90%]">
-                    <img src={vector} className="hidden lg:block z-[100] w-[40%] mt-[160%] md:w-[20%] md:mt-[40%] md:ml-[40%] lg:w-[20%]  lg:mt-[40%] lg:ml-[40%] xl:mt-[35%] absolute"/>
+                    {/* <img src={vector} className="hidden lg:block z-[100] w-[40%] mt-[160%] md:w-[20%] md:mt-[40%] md:ml-[40%] lg:w-[20%]  lg:mt-[40%] lg:ml-[40%] xl:mt-[35%] absolute"/> */}
                     <div className="flex md:justify-center items-center mt-8 md:mt-0 lg:mt-0 xl:mt-0 w-[100%] md:w-[100%] lg:w-[55%] xl:w-[55%]">
                         <div className=" h-[90%] flex flex-col justify-center w-[100%] md:w-[90%] md:h-[60%] mt-12 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
                             <h1 className="text-center lg:text-left"> Safe, Simple and Exciting Way to Ride. </h1>
@@ -254,9 +253,9 @@ export default function index() {
     
       <section className="h-[120vh] xl:h-[100vh] flex justify-center items-center ">
       <div className="w-[100%] h-[100%]">
-             <div className="flex justify-center w-full h-[10%] xl:h-[20%]">
+             <div className="flex items-center justify-center w-full h-[10%] xl:h-[20%]">
                 <div className="w-[90%] flex-col justify-center ">
-                    <h4>Get RIdes faster</h4>
+                    <h4>Get Rides faster</h4>
                    <h2>How it works</h2>
                 </div>
              </div>
@@ -307,7 +306,7 @@ export default function index() {
                    </div>
                 </div>
                 <div className="w-[100%] h-[40%] xl:h-[100%] xl:w-[50%] flex xl:block items-center justify-center  ">
-                    <img src={home} className="z-[999] object-cover md:hidden :w-48 xl:block xl:mt-[6rem] xl:ml-8 xl:absolute xl:w-[20%] xl:h-[65%]"/>
+                    <img src={home} className="z-[999] object-cover md:hidden mt-8  w-48 xl:block xl:mt-[6rem] xl:ml-8 xl:absolute xl:w-[20%] xl:h-[65%]"/>
                     <img src={mockup} className=" ml-[20%] h-[100%] w-[80%] hidden md:block lg:block xl:block"/>
                 </div>
             </div>
@@ -346,7 +345,7 @@ export default function index() {
             </div>
         </div>
       </section>
-       <section className="h-[120vh] flex flex-col justify-center items-center">
+       <section className="h-[120vh] md:h-[70vh] flex flex-col justify-center items-center">
         <div className="w-[90%] h-[80%] flex flex-col xl:flex-row">
             <div className="w-[100%] h-[100%] md:h-[60%] lg:h-[100%] xl:h-[100%]  xl:w-[50%] flex items-center justify-center ">
                     <div className="contactform w-[75%] h-[95%]">

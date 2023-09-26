@@ -2,7 +2,6 @@
   font-family: Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: #475467;
   ;
@@ -15,11 +14,24 @@
   -webkit-text-size-adjust: 100%;
   
 }
+.f-icon > i {
+  font-size: 24px;
+}
 .fill {object-fit: fill;}
 .contain {object-fit: contain;}
 .cover {object-fit: cover;}
 .scale-down {object-fit: scale-down;}
 .none {object-fit: none;}
+
+.pattern {
+  background-image: url("assets/images/pattern.jpg");
+  background: cover;
+  background-repeat: no-repeat;
+  /* background-position: ; */
+  /* background-position: left; */
+  /* height: 340px;
+  width: 340px; */
+}
 
 .drivergirl {
   object-fit: contain;
@@ -171,6 +183,13 @@ WELCOME TO MEDIA SCREENS
 
 
 @media screen and (max-width:640px){
+  .pattern {
+    background-image: url("assets/images/pattern.jpg");
+    background: cover;
+    background-position: left;
+    background-repeat: repeat-y;
+    
+  }
   h1 {
     font-size: 40px;
     line-height: 45px;
