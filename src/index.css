@@ -50,7 +50,8 @@ h1 {
   font-weight: 700;
   letter-spacing: -2px;
   color: #101828;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Mooli', sans-serif;
 }
 h2 {
   font-size: 36px;
