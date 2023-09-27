@@ -1,5 +1,5 @@
 :root {
-  /* font-family: Arial, sans-serif; */
+  font-family: Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -50,8 +50,8 @@ h1 {
   font-weight: 700;
   letter-spacing: -2px;
   color: #101828;
-  /* font-family: 'Open Sans', sans-serif; */
-  font-family: 'Mooli', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Mooli', sans-serif; */
 }
 h2 {
   font-size: 36px;
@@ -59,23 +59,27 @@ h2 {
   font-weight: 600;
   letter-spacing: -2px;
   color: #101828;
+  font-family: 'Open Sans', sans-serif;
 }
 h3 {
   font-size: 22px;
   line-height: 44px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h4 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  color: #6941C6;
+  color: #1FBFFD;
+  font-family: 'Open Sans', sans-serif;
 }
 h5 {
   font-size: 16px;
   line-height: 30px;
   font-weight: 600;
   color: #101828;
+  font-family: 'Open Sans', sans-serif;
 }
 
 p {
@@ -215,7 +219,6 @@ WELCOME TO MEDIA SCREENS
     font-size: 18px;
     line-height: 24px;
     font-weight: 600;
-    color: #6941C6;
   }
   p {
     font-size: 18px;

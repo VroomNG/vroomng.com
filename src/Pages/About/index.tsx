@@ -5,6 +5,7 @@ import vroomimg from "../../assets/images/vroomimg.jpg"
 import vroomimg2 from "../../assets/images/vroomer2.jpg"
 import vroomimg3 from "../../assets/images/vroomer4.jpg"
 import vroomimg4 from "../../assets/images/suitdriver.png"
+import Join from "../../Components/Join"
 
 export default function index() {
   return (
@@ -150,7 +151,7 @@ export default function index() {
                 
              </div>
           </section>
-          
+          <Join/>
         </div>
     </>
   )
