@@ -32,6 +32,13 @@
   /* height: 340px;
   width: 340px; */
 }
+.vroom-bg {
+  background-image: url("assets/images/vroomimg.jpg");
+  background: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
 
 .drivergirl {
   object-fit: contain;
