@@ -98,7 +98,7 @@ export default function index() {
                     </p>
               </div>   
              </div>
-             <div className="w-[100] h-[50%] bg-green-300 lg:w-[50%] xl:w-[50%] 2xl:w-[50%] lg:h-[100%] xl:h-[100%] 2xl:h-[100%] flex justify-center items-center lg:justify-end lg:items-center xl:justify-center">
+             <div className="w-[100] h-[50%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] lg:h-[100%] xl:h-[100%] 2xl:h-[100%] flex justify-center items-center lg:justify-end lg:items-center xl:justify-center">
 
                 <img src={vroomimg2} alt='vroom-img' className="object-contain md:object-cover lg:object-cover xl:object-fill w-96 h-96 md:w-[90%] md:h-[90%] lg:w-[30rem] lg:h-[30rem] xl:w-[100%] xl:h-[100%] "/>
                 
@@ -145,7 +145,7 @@ export default function index() {
                     </p>
               </div>   
              </div>
-             <div className="w-[100] h-[50%] bg-green-300 lg:w-[50%] xl:w-[50%] 2xl:w-[50%] lg:h-[100%] xl:h-[100%] 2xl:h-[100%] flex justify-center items-center lg:justify-end lg:items-center xl:justify-center">
+             <div className="w-[100] h-[50%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] lg:h-[100%] xl:h-[100%] 2xl:h-[100%] flex justify-center items-center lg:justify-end lg:items-center xl:justify-center">
 
                 <img src={vroomimg3} alt='vroom-img' className="object-contain md:object-cover lg:object-cover xl:object-fill w-96 h-96 md:w-[90%] md:h-[90%] lg:w-[30rem] lg:h-[30rem] xl:w-[100%] xl:h-[100%] "/>
                 
