@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import logo from "../../assets/icons/vroom.svg"
 
 export default function index() {
@@ -37,7 +38,7 @@ export default function index() {
                             <span className="text-white">
                                 <h6>Company</h6>
                                 <h6>About us</h6>
-                                <h6>Contact</h6> 
+                                <NavLink to="/contact"><h6>Contact</h6></NavLink>
                             </span>
                         </div>
                 </div>

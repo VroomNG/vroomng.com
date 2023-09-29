@@ -83,7 +83,7 @@ const img = [
       id: 6,
       title: 'Updates',
       description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      brand:true,
+      brand:false,
       linkImg: shirtdriver
     },
     // {
