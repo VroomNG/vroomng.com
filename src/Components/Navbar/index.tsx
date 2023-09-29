@@ -18,9 +18,13 @@ const close = () => {
         <nav className=" bg-transparent absolute w-full">
         {
         toggle == true? 
+           <>
+            <div className=" absolute opacity-70 flex justify-end bg-black w-full h-[200vh]">
+               <p>.</p>
+            </div>
             <div className="absolute md:hidden lg:hidden xl:hidden 2xl:hidden">
-                <div className="bg-gray-200 w-full h-[100vh] flex justify-end">
-                    <div className="mobile-nav w-[70%] h-[100vh] bg-white ">
+                <div className="bg-transparent w-full h-[200vh] flex justify-end">
+                    <div className="mobile-nav w-[80%] h-[200vh] bg-white ">
                         <div className="logo h-[20] flex ">
                             <span className="w-[70%] flex justify-center items-center">
                                 <NavLink to="/" className="flex items-center">
@@ -58,7 +62,9 @@ const close = () => {
                         </div>
                     </div>
                 </div>
-            </div> :
+            </div> 
+        </>
+            :
             <div>
 
             </div>
