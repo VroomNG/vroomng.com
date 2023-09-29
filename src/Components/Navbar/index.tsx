@@ -19,11 +19,11 @@ const close = () => {
         {
         toggle == true? 
            <>
-            <div className=" absolute opacity-70 flex justify-end bg-black w-full h-[200vh]">
+            <div className="xl:hidden md:hidden lg:hidden absolute opacity-70 flex justify-end bg-black w-full h-[200vh]">
                <p>.</p>
             </div>
             <div className="absolute md:hidden lg:hidden xl:hidden 2xl:hidden">
-                <div className="bg-transparent w-full h-[200vh] flex justify-end">
+                <div className="bg-transparent w-full h-[200vh] flex justify-end ">
                     <div className="mobile-nav w-[80%] h-[200vh] bg-white ">
                         <div className="logo h-[20] flex ">
                             <span className="w-[70%] flex justify-center items-center">
