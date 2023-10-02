@@ -38,22 +38,26 @@ const close = () => {
                         <div className=" flex justify-center">
                             <div className="w-[90%] mt-4">
                                 <NavLink to="/">
-                                    <button className="bg-brand600 text-white p-4 rounded-md w-full">
+                                    <button onClick={close}
+                                      className="bg-brand600 hover:bg-brand400 text-white p-4 rounded-md w-full">
                                         Home
                                     </button> 
                                 </NavLink>
                                 <NavLink to="/about">
-                                    <button className="bg-brand600 text-white p-4 my-2 rounded-md w-full">
+                                    <button onClick={close} 
+                                      className="bg-brand600 hover:bg-brand400 text-white p-4 my-2 rounded-md w-full">
                                         About us
                                     </button> 
                                 </NavLink>
                                 <NavLink to="/contact">
-                                    <button className="bg-brand600 text-white p-4 my-2  rounded-md w-full">
+                                    <button onClick={close} 
+                                        className="bg-brand600 hover:bg-brand400 text-white p-4 my-2  rounded-md w-full">
                                         Contact us
                                     </button> 
                                 </NavLink>
                                 <NavLink to="/">
-                                    <button className="bg-brand600 text-white p-4 my-2  rounded-md w-full">
+                                    <button onClick={close} 
+                                     className="bg-brand600 hover:bg-brand400 text-white p-4 my-2  rounded-md w-full">
                                         Become a Vroomer
                                     </button> 
                                 </NavLink>
