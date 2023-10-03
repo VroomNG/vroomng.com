@@ -20,6 +20,7 @@ import Join from "../../Components/Join"
 
 
 
+
 const btn = [
     {
         id:1,
@@ -38,36 +39,36 @@ const btn = [
 const img = [
     {
       id: 1,
-      title: 'Free Rides',
-      description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Reliability Unleashed',
+      description: 'Navigate your world effortlessly with Vroom. Our user-friendly app makes journey planning a breeze, putting you in control of your travel experience',
       brand:true,
       linkImg:suitdriver,
     },
     {
       id: 2,
-      title: 'Updates',
-      description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Effortless Journey Planning',
+      description: 'Navigate your world effortlessly with Vroom. Our user-friendly app makes journey planning a breeze, putting you in control of your travel experience.',
       brand:false,
       linkImg: pinkdriver,
     },
     {
       id: 3,
-      title: 'Commission Free',
-      description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Earn and Enjoy on Every Drive',
+      description: 'Turn your daily drive into a rewarding experience. Drive with Vroom, earn on every trip, and enjoy the journey with our driver-friendly platform.',
       brand:true,
       linkImg: shirtdriver
     },
     {
       id: 4,
-      title: 'Updates',
-      description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Safety as Our Priority',
+      description: 'Safety is paramount at Vroom. From thorough driver screenings to real-time trip monitoring, we prioritize your well-being every step of the way.',
       brand:false,
       linkImg: vroomer 
     },
     {
       id: 5,
-      title: 'Updates',
-      description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Reliability Unleashed',
+      description: 'Navigate your world effortlessly with Vroom. Our user-friendly app makes journey planning a breeze, putting you in control of your travel experience',
       brand:true,
       linkImg: handsomeguy,
     },
@@ -81,8 +82,8 @@ const img = [
     // },
     {
       id: 6,
-      title: 'Updates',
-      description: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Earn and Enjoy on Every Drive',
+      description: 'Turn your daily drive into a rewarding experience. Drive with Vroom, earn on every trip, and enjoy the journey with our driver-friendly platform.',
       brand:false,
       linkImg: shirtdriver
     },
@@ -146,8 +147,8 @@ export default function index() {
                         <div className=" h-[90%] flex flex-col justify-center w-[100%] md:w-[90%] md:h-[60%] mt-12 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
                             <h1 className="text-center lg:text-left"> Safe, Simple and Exciting Way to Ride. </h1>
                             <div className="w-[100%] py-4 ">
-                                <p className="text-center lg:text-left">Be one out first 100 drivers to get 3 months of commision
-                                    free earnings, when you join our Vroom Family!
+                                <p className="text-center lg:text-left">
+                                    Whether you're heading out or hitting the road, Vroom is your go-to travel companion. Passengers, enjoy seamless rides with our trusted drivers. Drivers, embark on a rewarding journey with us. Your next adventure awaits!
                                 </p>
                             </div>
                             <div className="flex justify-center lg:justify-between xl:justify-between
@@ -208,8 +209,8 @@ export default function index() {
                                         <img src={item.linkImg}/>
                                     </div>
                                     <div className={item.brand==true? "card-bottom bg-brand200" : "card-bottom bg-brand300"}>
-                                        <h3 className="font-medium">{item.title}</h3>
-                                        <span>{item.description}</span>
+                                        <h3 className="font-small text-[16px] leading-5 pb-2">{item.title}</h3>
+                                        <p className="text-[12px] leading-5">{item.description}</p>
                                     </div> 
                                 </div>
                             </div>
@@ -233,18 +234,19 @@ export default function index() {
              </div>
             <div className=" h-[70%]  xl:mt-12" >
                 <div className=" flex flex-col lg:flex-row xl:flex-row  w-[100%]">
-                   <div className="w-[100%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%]">
-                    <img src={carman} />
+                   <div className="w-[100%] lg:w-[50%] bg-green-400 xl:w-[50%] 2xl:w-[50%]">
+                    <img src={carman} className="object-cover w-[100%] h-[100%]" />
                    </div>
-                   <div className="w-[100%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] pt-16 lg:p-10 xl:p-10 2xl:p-10">
-                    <p className="text-[16px] text-justify">
-                        Sagittis et eu at elementum, quis in. Proin praesent volutpat
-                         egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac. Auctor rutrum lacus malesuada massa ornare et. Vulputate consectetur ac ultrices at diam dui eget fringilla tincidunt. Arcu sit dignissim massa erat cursus vulputate gravida id. Sed quis auctor vulputate hac elementum gravida cursus dis.
-                        Lectus id duis vitae porttitor enim gravida morbi.
-                        Eu turpis posuere semper feugiat volutpat elit, ultrices suspendisse. Auctor vel in vitae placerat.
-                        Suspendisse maecenas ac donec scelerisque diam sed est duis purus.
-                        Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor.
-                    </p>
+                   <div className="w-[100%] lg:w-[50%] flex-col flex justify-start xl:w-[50%] 2xl:w-[50%] pt-16 lg:p-10 xl:p-10 2xl:p-10">
+                        <p className="text-[16px] text-justify  leading-[20px] ">
+                            At Vroom, our journey is a testament to the commitment we have for redefining the way we move. Since our inception, we've achieved significant milestones, and we're just getting started:
+                            <ul className="bullet-list py-4">
+                            <li className="ml-8 py-2">Embracing a vibrant community of passengers and drivers, we've grown together, sharing in the joys of every journey</li>
+                            <li className="ml-8 py-2">Our success is powered by cutting-edge technology. From seamless app experiences to smart route optimization, innovation is at our core.</li>
+                            <li className="ml-8 py-2">We've built a reputation for trust and reliability. Passengers and drivers alike choose Vroom for journeys that go beyond transportation, they are experiences.</li>
+                            </ul>
+                            As we look to the future, our commitment to providing exceptional rides, fostering community connections, and embracing the latest in transportation technology remains unwavering. Join us on this exciting journey, because at Vroom, every ride is an opportunity to create lasting memories
+                        </p>
                    </div>
                 </div>
             </div>
@@ -272,7 +274,7 @@ export default function index() {
                             <h5>Select your destination</h5>
                         </div>   
                         <div className="text-gray600 font-sm py-2 w-[90%]">
-                            Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                        Choose where you want to go with a simple tap. Enter your destination, and we'll take care of the rest.
                         </div>
                         <span>
                         <h5>Learn more</h5> 
@@ -284,7 +286,7 @@ export default function index() {
                             <h5>Request a ride</h5>
                         </div>   
                         <div className="text-gray600 font-sm py-2 w-[90%]">
-                            Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                        Hit the "Request Ride" button, and we'll connect you with the nearest available driver. Watch your ride approach in real-time on the map
                         </div>
                         <span>
                         <h5>Learn more</h5> 
@@ -296,7 +298,9 @@ export default function index() {
                             <h5>Vrooooooom!!</h5>
                         </div>   
                         <div className="text-gray600 font-sm py-2 w-[90%]">
-                            Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                        Vroooooooom!
+                        Once your driver arrives, hop in and experience the thrill of a smooth and safe ride to your destination. Pay seamlessly through the app, and don't forget to rate your experience!
+                        Learn more
                         </div>
                         <span>
                         <h5>Learn more</h5> 
@@ -315,7 +319,7 @@ export default function index() {
 
      <Join/>  
      
-       <section className="h-[100vh] bg-red-400 md:h-[70vh] lg:h-[120vh] xl:h-[120vh] 2xl:h-[120vh] flex flex-col justify-center items-center">
+       <section className="h-[100vh] md:h-[70vh] lg:h-[120vh] xl:h-[120vh] 2xl:h-[120vh] flex flex-col justify-center items-center">
         <div className="w-[90%] h-[80%] flex flex-col xl:flex-row">
             <div className="w-[100%] h-[100%] md:h-[60%] lg:h-[100%] xl:h-[100%]  xl:w-[50%] flex items-center justify-center ">
                     <div className="contactform w-[100%] h-[95%] lg:w-[75%] xl:w-[75%]">

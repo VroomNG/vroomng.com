@@ -24,15 +24,18 @@ export default function index() {
                       <span className="mt-2 text-center">
                         <h1>Safe, Simple and Exciting Way to Ride.</h1>
                       </span>
-                      <span className="mt-2 text-center w-[50%]">
-                        <p>We’re a dedicated team, for your best ride experience</p>
+                      <span className="mt-2 text-center w-[80%]">
+                        <p className="text-[16px]">Vroom was conceived on the road. Born of a desire to answer a need—that catchphrase of all
+                          catchphrases that has always existed: what is hip, accessible, safe, and gets you everywhere, including
+                          the last mile.
+                        </p>
                       </span>
                       {/* <span className="mt-2 w-[100%] bg-black"> */}
                         <div className="w-[100%] md:w-[100%] lg:w-[100%] xl:w-[100%] flex flex-col md:flex-row  items-center py-4 lg:mx-6 justify-evenly mt-2">
                             <div className="w-[100%] py-1 flex  md:justify-end lg:justify-end xl:justify-end 2x:justify-end xl:mr-2">
-                              <button className="rounded-md bg-white border-2 border-gray500 w-full p-2 md:w-32 lg:w-32 xl:w-32 md:p-2">
+                              <a href="#learn"><button className="rounded-md bg-white border-2 border-gray500 w-full p-2 md:w-32 lg:w-32 xl:w-32 md:p-2">
                                 <span className="text-[14px] font-medium md:text-md lg:text-md xl:text-md">Learn more</span> 
-                              </button>
+                              </button></a>
                             </div>
                             <div className="w-[100%] py-1 md:ml-2">
                                 <button className="rounded-md bg-brand600 border-2 border-brand600 w-full p-2 text-white md:w-32 lg:w-32 xl:w-32 md:p-2">
@@ -46,13 +49,23 @@ export default function index() {
                 </div>
             </div>
           </header>
-          <section className="h-[34vh] md:h-[30vh] lg:h-[60vh] xl:h-[60vh] w-full flex justify-center items-center">
-            <div className="h-[90%] w-[90%] md:w-[60%] flex flex-col items-center justify-center">
+          <section id="learn" className="h-[34vh] md:h-[30vh] lg:h-[60vh] xl:h-[60vh] w-full flex justify-center items-center">
+            <div className="h-[90%] w-[90%] md:w-[80%] flex flex-col items-center justify-center">
               <span className="py-4">
                 <h2>About Vroom</h2>
               </span>
-              <span>
-                <p className="text-center">Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
+              <span >
+                <p className="text-center text-[16px]">
+                At Vroom, our goal is to serve. We burn the oil and hit the caffeine to ensure we get you home, to your
+                loved ones, to that interview, and to your fortress of solitude. We are your batmobile. We are your
+                income stream. We are Vroom, a company driven by a desire to get you from one point to the other in a
+                safe and sustainable manner.
+                <br></br>
+                We are relentless and committed to our values, to ensuring everyone, regardless of age, gender, race,
+                religion, or sexual orientation, has access to affordable and safe rides on the Vroom platform, to earning
+                and retaining the respect and trust of customers, drivers, and communities, and to transforming the
+                transportation eco-system through state-of-the-art technology and job creation.
+                </p>
               </span>
             </div>
           </section>
@@ -69,8 +82,10 @@ export default function index() {
                         <h2>Safety</h2>
                     </div>
                     <p className="text-justify lg:text-[14px] xl:text-[18px]">
-                    Sagittis et eu at elementum, quis in. Proin praesent volutpat egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac. Auctor rutrum lacus malesuada massa ornare et. Vulputate consectetur ac ultrices at diam dui eget fringilla tincidunt. Arcu sit dignissim massa erat cursus vulputate gravida id. Sed quis auctor vulputate hac elementum gravida cursus dis.
-                      Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor.
+                    With in-built features like a panic button and pre-inputted emergency numbers, Vroom gives
+                    you the next best thing to you riding in your personal car. Rigorous background checks, high
+                    standard for allowed cars, a constant review of policies, and a customer service that answers all
+                    complaints with empathy and at the speed of light, ensure every end user’s safety is prioritized.
                     </p>
               </div>   
              </div>
@@ -93,8 +108,10 @@ export default function index() {
                         <h2>Community</h2>
                     </div>
                     <p className="text-justify lg:text-[14px] xl:text-[18px]">
-                    Sagittis et eu at elementum, quis in. Proin praesent volutpat egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac. Auctor rutrum lacus malesuada massa ornare et. Vulputate consectetur ac ultrices at diam dui eget fringilla tincidunt. Arcu sit dignissim massa erat cursus vulputate gravida id. Sed quis auctor vulputate hac elementum gravida cursus dis.
-                      Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor.
+                    It takes a village. Always. We are a community, a group of people who share similar principles
+                      but not always similar perspectives. However, we all know the importance of having a hand to
+                      hold, a shoulder to lean on, and a back to jump on as you celebrate your wins. We are open, we
+                      are empathetic, and we care. We always will walk with you and be part of your milestones.
                     </p>
               </div>   
              </div>
@@ -116,8 +133,10 @@ export default function index() {
                         <h2>Convinence</h2>
                     </div>
                     <p className="text-justify lg:text-[14px] xl:text-[18px]">
-                    Sagittis et eu at elementum, quis in. Proin praesent volutpat egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac. Auctor rutrum lacus malesuada massa ornare et. Vulputate consectetur ac ultrices at diam dui eget fringilla tincidunt. Arcu sit dignissim massa erat cursus vulputate gravida id. Sed quis auctor vulputate hac elementum gravida cursus dis.
-                      Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor.
+                    From the hustle in Lagos to the bustle of New York, urban cities are getting crowded by the day.
+                    The flashing lights of passing cars are not abating any time soon. At Vroom, we are giving you
+                    the choice of transportation just at the touch of a button. Sit back as you are driven to your
+                    destination or track the delivery of your items.
                     </p>
               </div>   
              </div>
@@ -137,11 +156,13 @@ export default function index() {
                         </div>
                     </div>
                     <div className="pt-4 pb-2">
-                        <h2>Community</h2>
+                        <h2>Access</h2>
                     </div>
                     <p className="text-justify lg:text-[14px] xl:text-[18px]">
-                    Sagittis et eu at elementum, quis in. Proin praesent volutpat egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac. Auctor rutrum lacus malesuada massa ornare et. Vulputate consectetur ac ultrices at diam dui eget fringilla tincidunt. Arcu sit dignissim massa erat cursus vulputate gravida id. Sed quis auctor vulputate hac elementum gravida cursus dis.
-                      Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor.
+                    The future really is already here. Tomorrow is today as we constantly try to stay ahead of the
+                    curve. This includes ensuring a space for everyone’s growth, both riders and drivers. With a
+                    young and forward-thinking team, we would continue to create innovative ways to make your
+                    movement from place to place a seamless, safe, and affordable venture.
                     </p>
               </div>   
              </div>

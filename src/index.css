@@ -14,6 +14,9 @@
   -webkit-text-size-adjust: 100%;
   
 }
+.bullet-list {
+  list-style-type: disc
+}
 .f-icon > i {
   font-size: 24px;
 }
