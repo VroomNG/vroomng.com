@@ -56,6 +56,16 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   /* font-family: 'Mooli', sans-serif; */
 }
+.max-header {
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  /* color: #101828; */
+  color: red;
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Mooli', sans-serif; */
+}
 h2 {
   font-size: 36px;
   line-height: 44px;

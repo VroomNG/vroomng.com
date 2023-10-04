@@ -145,7 +145,7 @@ export default function index() {
                     {/* <img src={vector} className="hidden lg:block z-[100] w-[40%] mt-[160%] md:w-[20%] md:mt-[40%] md:ml-[40%] lg:w-[20%]  lg:mt-[40%] lg:ml-[40%] xl:mt-[35%] absolute"/> */}
                     <div className="flex md:justify-center items-center mt-8 md:mt-0 lg:mt-0 xl:mt-0 w-[100%] md:w-[100%] lg:w-[55%] xl:w-[55%]">
                         <div className=" h-[90%] flex flex-col justify-center w-[100%] md:w-[90%] md:h-[60%] mt-12 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
-                            <h2 className="text-center lg:text-left"> Safe, Simple and Exciting Way to Ride. </h2>
+                            <h1 className="max-header text-center lg:text-left"> Safe, Simple and Exciting Way to Ride. </h1>
                             <div className="w-[100%] py-4 ">
                                 <p className="text-center lg:text-left">
                                     Whether you're heading out or hitting the road, Vroom is your go-to travel companion. Passengers, enjoy seamless rides with our trusted drivers. Drivers, embark on a rewarding journey with us. Your next adventure awaits!
