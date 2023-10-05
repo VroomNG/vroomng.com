@@ -250,6 +250,11 @@ WELCOME TO MEDIA SCREENS
     letter-spacing: 2px;
     
   }
+  .max-header {
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: 2px;
+  }
   h2 {
     font-size: 36px;
     line-height: 44px;
@@ -257,7 +262,19 @@ WELCOME TO MEDIA SCREENS
     letter-spacing: -2px;
     color: #101828;
   }
+  .header-two {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    color: #101828;
+  }
   h4 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .header-four {
     font-size: 18px;
     line-height: 24px;
     font-weight: 600;

@@ -9,7 +9,7 @@ export default function index() {
         <div className="w-[90%] h-[80%] flex flex-col xl:flex-row">
             <div className="w-[100%] h-[100%] md:h-[60%] lg:h-[100%] xl:h-[100%] xl:w-[50%] flex items-center justify-center ">
                     <div className="contactform w-[75%] h-[95%] flex flex-col justify-center">
-                      <h2>Become a Vrommer</h2>
+                      <h2 className="header-two">Become a Vrommer</h2>
                       {/* <p>Our  team would love to hear from you.</p> */}
                       <div className="">
                         <form>
