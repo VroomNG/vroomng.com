@@ -22,7 +22,7 @@ export default function index() {
                           <h4>About us</h4>
                       </span>
                       <span className="mt-2 text-center">
-                        <h1>Safe, Simple and Exciting Way to Ride.</h1>
+                        <h1 className="max-header">Safe, Simple and Exciting Way to Ride.</h1>
                       </span>
                       <span className="mt-2 text-center w-[80%]">
                         <p className="text-[16px]">Vroom was conceived on the road. Born of a desire to answer a need—that catchphrase of all
