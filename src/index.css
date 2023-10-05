@@ -61,12 +61,22 @@ h1 {
   line-height: 72px;
   font-weight: 700;
   letter-spacing: -2px;
-  /* color: #101828; */
-  color: red;
+  color: #101828;
+  /* color: red; */
   font-family: 'Open Sans', sans-serif;
   /* font-family: 'Mooli', sans-serif; */
 }
+
+
 h2 {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+  letter-spacing: -2px;
+  color: #101828;
+  font-family: 'Open Sans', sans-serif;
+}
+.header-two {
   font-size: 36px;
   line-height: 44px;
   font-weight: 600;
@@ -79,7 +89,11 @@ h3 {
   line-height: 44px;
   font-family: 'Open Sans', sans-serif;
 }
-
+.header-three {
+  font-size: 22px;
+  line-height: 44px;
+  font-family: 'Open Sans', sans-serif;
+}
 h4 {
   font-size: 16px;
   line-height: 24px;
@@ -87,7 +101,22 @@ h4 {
   color: #1FBFFD;
   font-family: 'Open Sans', sans-serif;
 }
+.header-four {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #1FBFFD;
+  font-family: 'Open Sans', sans-serif;
+}
+
 h5 {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #101828;
+  font-family: 'Open Sans', sans-serif;
+}
+.header-five {
   font-size: 16px;
   line-height: 30px;
   font-weight: 600;

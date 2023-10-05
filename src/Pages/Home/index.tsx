@@ -182,7 +182,7 @@ export default function index() {
          <div className="w-[90%] h-[90%] md:h-[85%] flex flex-col justify-center">
              <div className="flex flex-col  md:flex-row h-[30%] md:h-[10%] lg:md-h[30%] xl:h-[30%] 2xl:h-[30%]">
                 <div className="w-[100%] md:w-[50%] lg:w-[75%] xl:w-[75%] 2xl:w-[75%] ">
-                   <h2>Sign up to Recieve</h2>
+                   <h2 className="header-two">Sign up to Recieve</h2>
                    <p >See what you get once you become a Vroomer</p>
                 </div>
                 <div className="w-[100%] md:w-[50%] lg:w-[25%] xl:w-[25%] 2xl:w-[25%]  flex flex-col md:flex-row md:pl-16 lg:pl-14  xl:pl-16 2xl:pl-14 items-center py-4 lg:mx-6 justify-evenly mt-2">
@@ -209,7 +209,7 @@ export default function index() {
                                         <img src={item.linkImg}/>
                                     </div>
                                     <div className={item.brand==true? "card-bottom bg-brand200" : "card-bottom bg-brand300"}>
-                                        <h3 className="font-small text-[16px] leading-5 pb-2">{item.title}</h3>
+                                        <h3 className="header-three font-small text-[16px] leading-5 pb-2">{item.title}</h3>
                                         <p className="text-[12px] leading-5">{item.description}</p>
                                     </div> 
                                 </div>
@@ -227,8 +227,8 @@ export default function index() {
       <div className="w-[90%] h-[90%] flex flex-col  2xl:flex-row">
              <div className="flex h-[20%]">
                 <div className="w-[100%] md:w-[75%] lg:w-[75%] xl:w-[75%]">
-                    <h4>Our story</h4>
-                   <h2>We’re just getting started</h2>
+                    <h4 className="header-four">Our story</h4>
+                   <h2 className="header-two">We’re just getting started</h2>
                    <p >We’ve already have over 400 happy Vroomers, making their lives easier here.</p>
                 </div>
              </div>
@@ -257,8 +257,8 @@ export default function index() {
       <div className="w-[100%] h-[100%]">
              <div className="flex items-center justify-center w-full h-[10%] xl:h-[20%]">
                 <div className="w-[90%] flex-col justify-center ">
-                    <h4>Get Rides faster</h4>
-                   <h2>How it works</h2>
+                    <h4 className="header-four">Get Rides faster</h4>
+                   <h2 className="header-two">How it works</h2>
                 </div>
              </div>
             <div className=" h-[80%] flex flex-col xl:flex-row" >
@@ -271,31 +271,30 @@ export default function index() {
                    <div className=" w-[85%] h-[90%]">
                     <span>
                         <div className="py-1">
-                            <h5>Select your destination</h5>
+                            <h5 className="header-five">Select your destination</h5>
                         </div>   
                         <div className="text-gray600 font-sm py-2 w-[90%]">
                         Choose where you want to go with a simple tap. Enter your destination, and we'll take care of the rest.
                         </div>
                         <span>
-                        <h5>Learn more</h5> 
-
+                        <h5 className="header-five">Learn more</h5> 
                         </span>
                     </span>
                     <span>
                         <div className="py-1">
-                            <h5>Request a ride</h5>
+                            <h5 className="header-five">Request a ride</h5>
                         </div>   
                         <div className="text-gray600 font-sm py-2 w-[90%]">
                         Hit the "Request Ride" button, and we'll connect you with the nearest available driver. Watch your ride approach in real-time on the map
                         </div>
                         <span>
-                        <h5>Learn more</h5> 
+                        <h5 className="header-five">Learn more</h5> 
 
                         </span>
                     </span>
                     <span>
                         <div className="py-1">
-                            <h5>Vrooooooom!!</h5>
+                            <h5 className="header-five">Vrooooooom!!</h5>
                         </div>   
                         <div className="text-gray600 font-sm py-2 w-[90%]">
                         Vroooooooom!
@@ -303,8 +302,7 @@ export default function index() {
                         Learn more
                         </div>
                         <span>
-                        <h5>Learn more</h5> 
-
+                        <h5 className="header-five">Learn more</h5> 
                         </span>
                     </span>
                    </div>
@@ -323,7 +321,7 @@ export default function index() {
         <div className="w-[90%] h-[80%] flex flex-col xl:flex-row">
             <div className="w-[100%] h-[100%] md:h-[60%] lg:h-[100%] xl:h-[100%]  xl:w-[50%] flex items-center justify-center ">
                     <div className="contactform w-[100%] h-[95%] lg:w-[75%] xl:w-[75%]">
-                      <h2>Get in touch</h2>
+                      <h2 className="header-two">Get in touch</h2>
                       <p>Our  team would love to hear from you.</p>
                       <div className="">
                         <form>
