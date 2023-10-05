@@ -28,7 +28,7 @@ export default function index() {
                 </div>
                 <div className="w-[100%] h-[50%] md:h-[50%]  order-1 lg:order-2 xl:order-2 lg:w-[50%] lg:h-[100%] xl:w-[50%] xl:h-[100%]  flex flex-col items-center justify-center md:items-center lg:items-center xl:items-start">
                     <div className="w-[90%] lg:w-[90%] xl:w-[80%] flex flex-col justify-center md:text-center lg:text-left xl:text-left  ">
-                        <h2 className="py-4">Join 4,000+ Drivers and Riders on Vroom</h2>
+                        <h2 className="header-two py-4">Join 4,000+ Drivers and Riders on Vroom</h2>
                         <span className="text-[20px] py-4">Get the app and Start riding.</span>
                         <div className="flex justify-between md:justify-center  xl:justify-between py-4 mx-1 w-[100%] md:w-[100%] lg:w-[80%] xl:w-[80%] 2xl:w-[80%]">
                                 {btn.map((item)=> {
