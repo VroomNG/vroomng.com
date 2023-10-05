@@ -61,8 +61,8 @@ h1 {
   line-height: 72px;
   font-weight: 700;
   letter-spacing: -2px;
-  color: #101828;
-  /* color: red; */
+  /* color: #101828; */
+  color: red;
   font-family: 'Open Sans', sans-serif;
   /* font-family: 'Mooli', sans-serif; */
 }
