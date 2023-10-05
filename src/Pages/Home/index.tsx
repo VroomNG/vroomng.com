@@ -209,7 +209,7 @@ export default function index() {
                                         <img src={item.linkImg}/>
                                     </div>
                                     <div className={item.brand==true? "card-bottom bg-brand200" : "card-bottom bg-brand300"}>
-                                        <h3 className="header-three font-small text-[16px] leading-5 pb-2">{item.title}</h3>
+                                        <h3 className=" font-small text-[16px] leading-5 pb-2">{item.title}</h3>
                                         <p className="text-[12px] leading-5">{item.description}</p>
                                     </div> 
                                 </div>

@@ -19,7 +19,7 @@ export default function index() {
               <div className="container w-[90%] h-[80%] flex items-center justify-center">
                 <div className="flex flex-col items-center justify-center w-full">
                       <span className="text-center">
-                          <h4>About us</h4>
+                          <h4 className="header-four">About us</h4>
                       </span>
                       <span className="mt-2 text-center">
                         <h1 className="max-header">Safe, Simple and Exciting Way to Ride.</h1>
@@ -52,7 +52,7 @@ export default function index() {
           <section id="learn" className="h-[34vh] md:h-[30vh] lg:h-[60vh] xl:h-[60vh] w-full flex justify-center items-center">
             <div className="h-[90%] w-[90%] md:w-[80%] flex flex-col items-center justify-center">
               <span className="py-4">
-                <h2>About Vroom</h2>
+                <h2 className="header-two">About Vroom</h2>
               </span>
               <span >
                 <p className="text-center text-[16px]">
@@ -79,7 +79,7 @@ export default function index() {
                         </div>
                     </div>
                     <div className="pt-4 pb-2">
-                        <h2>Safety</h2>
+                        <h2 className="header-two">Safety</h2>
                     </div>
                     <p className="text-justify lg:text-[14px] xl:text-[18px]">
                     With in-built features like a panic button and pre-inputted emergency numbers, Vroom gives
@@ -105,7 +105,7 @@ export default function index() {
                         </div>
                     </div>
                     <div className="pt-4 pb-2">
-                        <h2>Community</h2>
+                        <h2 className="header-two">Community</h2>
                     </div>
                     <p className="text-justify lg:text-[14px] xl:text-[18px]">
                     It takes a village. Always. We are a community, a group of people who share similar principles
@@ -130,7 +130,7 @@ export default function index() {
                         </div>
                     </div>
                     <div className="pt-4 pb-2">
-                        <h2>Convinence</h2>
+                        <h2 className="header-two">Convinence</h2>
                     </div>
                     <p className="text-justify lg:text-[14px] xl:text-[18px]">
                     From the hustle in Lagos to the bustle of New York, urban cities are getting crowded by the day.
@@ -156,7 +156,7 @@ export default function index() {
                         </div>
                     </div>
                     <div className="pt-4 pb-2">
-                        <h2>Access</h2>
+                        <h2 className="header-two">Access</h2>
                     </div>
                     <p className="text-justify lg:text-[14px] xl:text-[18px]">
                     The future really is already here. Tomorrow is today as we constantly try to stay ahead of the
