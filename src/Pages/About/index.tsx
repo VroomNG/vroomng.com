@@ -1,10 +1,11 @@
-import chat from "../../assets/svg/message-chat-circle.svg"
+import chat from "../../assets/svg/security-safe.svg"
 import community from "../../assets/svg/community.svg"
 import conv from "../../assets/svg/convinience.svg"
+import lock from "../../assets/svg/lock.svg"
 import vroomimg from "../../assets/images/vroomimg.jpg"
 import vroomimg2 from "../../assets/images/vroomer2.jpg"
 import vroomimg3 from "../../assets/images/vroomer4.jpg"
-import vroomimg4 from "../../assets/images/suitdriver.png"
+import vroomimg4 from "../../assets/images/vroomer3.jpg"
 import Join from "../../Components/Join"
 
 export default function index() {
@@ -130,7 +131,7 @@ export default function index() {
                         </div>
                     </div>
                     <div className="pt-4 pb-2">
-                        <h2 className="header-two">Convinence</h2>
+                        <h2 className="header-two">convenience</h2>
                     </div>
                     <p className="text-justify lg:text-[14px] xl:text-[18px]">
                     From the hustle in Lagos to the bustle of New York, urban cities are getting crowded by the day.
@@ -142,7 +143,7 @@ export default function index() {
              </div>
              <div className="w-[100] h-[50%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] lg:h-[100%] xl:h-[100%] 2xl:h-[100%] flex justify-center items-center lg:justify-end lg:items-center xl:justify-center">
 
-                <img src={vroomimg4} alt='vroom-img' className="object-contain md:object-cover lg:object-cover xl:object-fill w-96 h-96 md:w-[90%] md:h-[90%] lg:w-[30rem] lg:h-[30rem] xl:w-[100%] xl:h-[100%] "/>
+                <img src={vroomimg4} alt='vroom-img' className="object-contain md:object-cover lg:object-cover xl:object-cover w-96 h-96 md:w-[90%] md:h-[90%] lg:w-[30rem] lg:h-[30rem] xl:w-[100%] xl:h-[100%] "/>
                 
              </div>
           </section>
@@ -152,7 +153,7 @@ export default function index() {
               <div className="w-[90%] h-[90%] xl:h-[85%] md:w-[85%] md:h-[80%] flex-col lg:flex-col xl:flex-col lg:justify-end">   
                     <div className="bg-prime50 rounded-full flex justify-center items-center w-16 h-16">
                         <div className="bg-prime100 rounded-full w-10 h-10 flex justify-center items-center">
-                             <img src={chat} className="w-4"/>
+                             <img src={lock} className="w-4"/>
                         </div>
                     </div>
                     <div className="pt-4 pb-2">
