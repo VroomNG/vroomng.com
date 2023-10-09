@@ -1,6 +1,6 @@
 import drivergirl from "../../assets/images/drivergirl.jpg"
 import apple from "../../assets/svg/apple.svg"
-import suitdriver from "../../assets/images/suitdriver.png"
+// import suitdriver from "../../assets/images/suitdriver.png"
 import pinkdriver from "../../assets/images/pinkdriver.png"
 import shirtdriver from "../../assets/images/shirtdriver.png"
 import carman from "../../assets/images/carman.jpg"
@@ -26,52 +26,49 @@ const btn = [
         id:1,
         title: "Download on the",
         store: "App Store",
-        icon: apple
+        icon: apple,
+        link: "https://apps.apple.com/ng/app/vroom-ride/id1551813250"
     },
     {
         id:2,
         title: "Get it on ",
         store: "GooglePlay",
-        icon: playstore
+        icon: playstore,
+        link: "https://play.google.com/store/apps/details?id=com.vroomtech.vroomdriver"
     }
 ]
 
 const img = [
     {
-      id: 1,
-      title: 'Reliability Unleashed',
-      description: 'Navigate your world effortlessly with Vroom. Our user-friendly app makes journey planning a breeze, putting you in control of your travel experience',
-      brand:true,
-      linkImg:suitdriver,
-    },
+        id: 1,
+        title: 'Earn and Enjoy on Every Drive',
+        description: 'Turn your daily drive into a rewarding experience. Drive with Vroom, earn on every trip, and enjoy the journey with our driver-friendly platform.',
+        brand:true,
+        linkImg: shirtdriver
+      },
+    // {
+    //   id: 1,
+    //   title: 'Reliability Unleashed',
+    //   description: 'Navigate your world effortlessly with Vroom. Our user-friendly app makes journey planning a breeze, putting you in control of your travel experience',
+    //   brand:true,
+    //   linkImg:suitdriver,
+    // },
     {
-      id: 2,
-      title: 'Effortless Journey Planning',
-      description: 'Navigate your world effortlessly with Vroom. Our user-friendly app makes journey planning a breeze, putting you in control of your travel experience.',
-      brand:false,
-      linkImg: pinkdriver,
-    },
+        id: 2,
+        title: 'Reliability Unleashed',
+        description: 'Navigate your world effortlessly with Vroom. Our user-friendly app makes journey planning a breeze, putting you in control of your travel experience',
+        brand:false,
+        linkImg: handsomeguy,
+      },
+    
     {
       id: 3,
-      title: 'Earn and Enjoy on Every Drive',
-      description: 'Turn your daily drive into a rewarding experience. Drive with Vroom, earn on every trip, and enjoy the journey with our driver-friendly platform.',
-      brand:true,
-      linkImg: shirtdriver
-    },
-    {
-      id: 4,
       title: 'Safety as Our Priority',
       description: 'Safety is paramount at Vroom. From thorough driver screenings to real-time trip monitoring, we prioritize your well-being every step of the way.',
-      brand:false,
+      brand:true,
       linkImg: vroomer 
     },
-    {
-      id: 5,
-      title: 'Reliability Unleashed',
-      description: 'Navigate your world effortlessly with Vroom. Our user-friendly app makes journey planning a breeze, putting you in control of your travel experience',
-      brand:true,
-      linkImg: handsomeguy,
-    },
+    
     // {
     //   id: 6,
     //   title: 'Minecraft',
@@ -81,12 +78,19 @@ const img = [
     //     'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/m/minecraft-switch/hero?_a=AJADJWI0',
     // },
     {
-      id: 6,
-      title: 'Earn and Enjoy on Every Drive',
-      description: 'Turn your daily drive into a rewarding experience. Drive with Vroom, earn on every trip, and enjoy the journey with our driver-friendly platform.',
-      brand:false,
-      linkImg: shirtdriver
-    },
+        id: 4,
+        title: 'Effortless Journey Planning',
+        description: 'Navigate your world effortlessly with Vroom. Our user-friendly app makes journey planning a breeze, putting you in control of your travel experience.',
+        brand:false,
+        linkImg: pinkdriver,
+      },
+    // {
+    //   id: 6,
+    //   title: 'Earn and Enjoy on Every Drive',
+    //   description: 'Turn your daily drive into a rewarding experience. Drive with Vroom, earn on every trip, and enjoy the journey with our driver-friendly platform.',
+    //   brand:false,
+    //   linkImg: shirtdriver
+    // },
     // {
     //   id: 8,
     //   title: 'Unravel Two',
@@ -156,7 +160,9 @@ export default function index() {
                                 {btn.map((item)=> {
                                     return(
                                         <div key={item.id} className=" mx-4 lg:mx-0 xl:mx-0 2xl:mx-0 ">
-                                            <button  className="bg-black flex w-36 md:w-40 text-white rounded-lg ">
+                                          <a
+                                            href={item.link}>
+                                                <button  className="bg-black flex w-36 md:w-40 text-white rounded-lg ">
                                                 <span className="w-[30%] p-2 flex items-center justify-center">
                                                     <img src={item.icon} width={"30px"}/>
                                                 </span>
@@ -164,7 +170,7 @@ export default function index() {
                                                     <p className="text-[10px] md:text-xm lg:text-xm pt-1 md:pt-0 lg:pt-0 xl:pt-0 md:h-[20px] lg:h-[20px] xl:h-[20px]">{item.title}</p>
                                                     <p className="text-sm font-medium">{item.store}</p>
                                                 </span>    
-                                            </button>
+                                            </button></a>
                                         </div>
                                     )
                                 })}
@@ -186,7 +192,7 @@ export default function index() {
                    <p >See what you get once you become a Vroomer</p>
                 </div>
                 <div className="w-[100%] md:w-[50%] lg:w-[25%] xl:w-[25%] 2xl:w-[25%]  flex flex-col md:flex-row md:pl-16 lg:pl-14  xl:pl-16 2xl:pl-14 items-center py-4 lg:mx-6 justify-evenly mt-2">
-                            <div className="w-[100%] py-1 flex  md:justify-end lg:justify-center xl:justify-end 2x:justify-end xl:mr-2">
+                            {/* <div className="w-[100%] py-1 flex  md:justify-end lg:justify-center xl:justify-end 2x:justify-end xl:mr-2">
                               <button className="rounded-md bg-white border-2 border-gray500 w-full p-2 md:w-32 lg:w-32 xl:w-32 md:p-2">
                                 <span className="text-[14px] font-medium md:text-md lg:text-md xl:text-md">Create account</span> 
                               </button>
@@ -195,7 +201,7 @@ export default function index() {
                                 <button className="rounded-md bg-brand600 border-2 border-brand600 w-full p-2 text-white md:w-32 lg:w-32 xl:w-32 md:p-2">
                                   <span className="text-[14px] font-medium">Our Customers</span>
                                 </button>
-                            </div>
+                            </div> */}
                 </div>
              </div>
             <div className="h-[70%] xl:h-[90%]">
@@ -277,7 +283,7 @@ export default function index() {
                         Choose where you want to go with a simple tap. Enter your destination, and we'll take care of the rest.
                         </div>
                         <span>
-                        <h5 className="header-five">Learn more</h5> 
+                        {/* <h5 className="header-five">Learn more</h5>  */}
                         </span>
                     </span>
                     <span>
@@ -288,7 +294,7 @@ export default function index() {
                         Hit the "Request Ride" button, and we'll connect you with the nearest available driver. Watch your ride approach in real-time on the map
                         </div>
                         <span>
-                        <h5 className="header-five">Learn more</h5> 
+                        {/* <h5 className="header-five">Learn more</h5>  */}
 
                         </span>
                     </span>
@@ -302,7 +308,7 @@ export default function index() {
                         Learn more
                         </div>
                         <span>
-                        <h5 className="header-five">Learn more</h5> 
+                        {/* <h5 className="header-five">Learn more</h5>  */}
                         </span>
                     </span>
                    </div>

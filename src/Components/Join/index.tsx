@@ -2,18 +2,20 @@ import passenger from "../../assets/images/passenger.png"
 import playstore from "../../assets/svg/playstore.svg"
 import apple from "../../assets/svg/apple.svg"
 const btn = [
-    {
-        id:1,
-        title: "Download on the",
-        store: "App Store",
-        icon: apple
-    },
-    {
-        id:2,
-        title: "Get it on ",
-        store: "GooglePlay",
-        icon: playstore
-    }
+        {
+            id:1,
+            title: "Download on the",
+            store: "App Store",
+            icon: apple,
+            link: "https://apps.apple.com/ng/app/vroom-ride/id1551813250"
+        },
+        {
+            id:2,
+            title: "Get it on ",
+            store: "GooglePlay",
+            icon: playstore,
+            link: "https://play.google.com/store/apps/details?id=com.vroomtech.vroomdriver"
+        }
 ]
 
 
@@ -34,7 +36,7 @@ export default function index() {
                                 {btn.map((item)=> {
                                     return(
                                         <div key={item.id}>
-                                            <button  className="bg-black flex w-36 md:w-40 text-white rounded-lg md:mx-4 lg:mx-0 xl:mx-0 ">
+                                            <a href={item.link}><button  className="bg-black flex w-36 md:w-40 text-white rounded-lg md:mx-4 lg:mx-0 xl:mx-0 ">
                                                 <span className="w-[30%] p-2 flex items-center justify-center">
                                                     <img src={item.icon} width={"30px"}/>
                                                 </span>
@@ -42,7 +44,7 @@ export default function index() {
                                                     <p className="text-[10px] md:text-xm lg:text-xm pt-1 md:pt-0 lg:pt-0 xl:pt-0 md:h-[20px] lg:h-[20px] xl:h-[20px]">{item.title}</p>
                                                     <p className="text-sm font-medium">{item.store}</p>
                                                 </span>    
-                                            </button>
+                                            </button></a>
                                         </div>
                                     )
                                 })}
