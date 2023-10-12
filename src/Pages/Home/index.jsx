@@ -16,9 +16,9 @@ import Slider from "react-slick"
 // import 'slick-carousel/slick/slick.css';
 // import 'slick-carousel/slick/slick-theme.css';
 import { Checkbox } from "@material-tailwind/react";
-import Join from "../../Components/Join"
-
-
+import Join from "../../Components/Join";
+import emailjs from '@emailjs/browser';
+import {useRef} from "react"
 
 
 const btn = [
@@ -101,7 +101,7 @@ const img = [
     // },
   ];
 
-export default function index() {
+export default function Index() {
     const settings = {
         dots: false,
         infinite: true,
@@ -135,6 +135,23 @@ export default function index() {
             },
           },
         ],
+      };
+
+      const getform = useRef();
+
+      const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('info@vroom', 
+        'template_2t1jlge',
+        getform.current, 
+         'W1Sr8ibFIQ75N7lgt')
+          .then((result) => {
+              console.log(result.text);
+              console.log('message sent');
+          }, (error) => {
+              console.log(error.text);
+          });
       };
 
     //   const cardstyle = {
@@ -330,35 +347,35 @@ export default function index() {
                       <h2 className="header-two">Get in touch</h2>
                       <p>Our  team would love to hear from you.</p>
                       <div className="">
-                        <form>
+                      <form ref={getform} onSubmit={sendEmail}>
                             <div className="name flex flex-col lg:flex-row xl:flex-row justify-between pt-4">
                                 <div className=" w-[100%]xl:w-[50%] ">
                                     <div className="label py-2">First name</div>
-                                    <input placeholder="First name" className="border-2 rounded-lg p-2 w-full lg:w-[95%] xl:w-[95%] px-4 border-gray300  bg-transparent" />
+                                    <input placeholder="First name" type="text" name="from_name" className="border-2 rounded-lg p-2 w-full lg:w-[95%] xl:w-[95%] px-4 border-gray300  bg-transparent" />
                                 </div>
                                 <div className=" w-[100%] xl:w-[50%]">
                                     <div className="label py-2 lg:px-4 xl:px-4">Last name</div>
                                     <div className="flex lg:justify-end xl:justify-end">
-                                        <input placeholder="First name" className="border-2 rounded-lg p-2 w-full lg:w-[95%] xl:w-[95%] lg:px-4 xl:px-4 border-gray300  bg-transparent" />
+                                        <input placeholder="Last name" type="text" name="from_lastname" className="border-2 rounded-lg p-2 w-full lg:w-[95%] xl:w-[95%] lg:px-4 xl:px-4 border-gray300  bg-transparent" />
                                     </div>
                                 </div> 
                             </div>
                             <div className="pt-2">
                                 <div className="label py-2">Email</div>
                                 <div className="w-[100%] ">
-                                    <input placeholder="you@company.com" className="border-2 rounded-lg p-2 px-4 w-[100%] border-gray300  bg-transparent" />
+                                    <input placeholder="you@company.com" type="email" name="from_email" className="border-2 rounded-lg p-2 px-4 w-[100%] border-gray300  bg-transparent" />
                                 </div>
                             </div>
                             <div className="pt-2">
                                 <div className="label py-2">Phone Number</div>
                                 <div className="w-[100%] ">
-                                    <input placeholder="First name" className="border-2 rounded-lg p-2 px-4 w-[100%] border-gray300  bg-transparent" />
+                                    <input placeholder="First name" type="phoneNumber" name="from_phonenumber" className="border-2 rounded-lg p-2 px-4 w-[100%] border-gray300  bg-transparent" />
                                 </div>
                             </div>
                             <div className="pt-2">
                                 <div className="label py-2">Message</div>
                                 <div className="w-[100%] h-[20%]">
-                                    <input placeholder="Leave us a message..." className="border-2 rounded-lg pb-12 px-4 w-[100%] h-[100px] border-gray300  bg-transparent" />
+                                    <input placeholder="Leave us a message..." type="message" name="message" className="border-2 rounded-lg pb-12 px-4 w-[100%] h-[100px] border-gray300  bg-transparent" />
                                 </div>
                             </div>
                             <div className="flex items-center ">
@@ -366,7 +383,7 @@ export default function index() {
                                 You agree to our friendly <a href="#"> privacy policy</a>.
                             </div>
                             <div className="btn">
-                                <button className="bg-brand600 text-white p-2 w-[100%] rounded-lg">
+                                <button className="bg-brand600 text-white p-2 w-[100%] rounded-lg" type="submit">
                                     send a message
                                 </button>
                             </div>
