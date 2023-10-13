@@ -3,7 +3,8 @@ import RootLayout from './Layouts/RootLayout';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Home from './Pages/Home'
-import BeVroomer from './Pages/BeVroomer'
+import BeVroomer from './Pages/BeVroomer';
+import RiderWithUs from './Pages/Rider';
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="joinVroom" element={<BeVroomer />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="rider" element={<RiderWithUs />} />
     </Route>
   )
 );

@@ -55,10 +55,16 @@ const close = () => {
                                         Contact us
                                     </button> 
                                 </NavLink>
-                                <NavLink to="/">
+                                <NavLink to="/joinVroom">
                                     <button onClick={close} 
                                      className="bg-brand600 hover:bg-brand400 text-white p-4 my-2  rounded-md w-full">
                                         Become a Vroomer
+                                    </button> 
+                                </NavLink>
+                                <NavLink to="/rider">
+                                    <button onClick={close} 
+                                     className="bg-brand600 hover:bg-brand400 text-white p-4 my-2  rounded-md w-full">
+                                        Ride With Us
                                     </button> 
                                 </NavLink>
                             </div>
@@ -104,7 +110,7 @@ const close = () => {
                         <NavLink to="/joinVroom" className="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Become a Vroomer</NavLink>
                         </li>
                         <li>
-                        <NavLink to="/" className="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Ride with us</NavLink>
+                        <NavLink to="/rider" className="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Ride with us</NavLink>
                         </li>
                     </ul>
                 </div>

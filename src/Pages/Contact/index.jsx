@@ -12,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 export default function Index() {
 
     const getform = useRef();
-    const [name, setName] = useState("test");
+    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [errorMsgs, setErrorMsgs] = useState("");
     
