@@ -18,7 +18,10 @@ import Slider from "react-slick"
 import { Checkbox } from "@material-tailwind/react";
 import Join from "../../Components/Join";
 import emailjs from '@emailjs/browser';
-import {useRef} from "react"
+import {useRef} from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const btn = [
@@ -149,8 +152,10 @@ export default function Index() {
           .then((result) => {
               console.log(result.text);
               console.log('message sent');
+              toast.success("Message Delivered");
           }, (error) => {
               console.log(error.text);
+              toast.error("Something went wrong, check network and try again")
           });
       };
 
@@ -397,7 +402,7 @@ export default function Index() {
         </div>
       </section>
      
-
+      <ToastContainer />
     </div>
   )
 }
