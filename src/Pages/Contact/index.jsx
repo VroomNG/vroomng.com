@@ -49,7 +49,7 @@ export default function Index() {
               toast.success("Message Delivered");
           }, (error) => {
               console.log(error.text);
-              toast.error("Something went wrong, check network and try again")
+              toast.error("Something went wrong, check network and try again!!")
           });
       };
 
