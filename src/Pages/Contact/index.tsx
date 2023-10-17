@@ -2,9 +2,7 @@
 import Join from "../../Components/Join";
 import smile from "../../assets/images/smile.png";
 import emailjs from '@emailjs/browser';
-import {
-    // useRef, 
-    useState} from "react";
+import { useState} from "react";
 // import { NotificationManager} from 'react-notifications';
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -45,7 +43,7 @@ export default function Index() {
     <div className="pt-10">
      <section className="h-[120vh] md:h-[70vh] lg:h-[120vh] xl:h-[120vh] 2xl:h-[120vh] flex flex-col justify-center items-center">
       <div className="w-[90%] h-[80%] flex flex-col xl:flex-row">
-      <div className="w-[100%] h-[100%] md:h-[60%] lg:h-[100%] xl:h-[100%]  xl:w-[50%] flex items-center justify-center ">
+            <div className="w-[100%] h-[100%] md:h-[60%] lg:h-[100%] xl:h-[100%]  xl:w-[50%] flex items-center justify-center ">
                     <div className="contactform w-[100%] h-[95%] lg:w-[75%] xl:w-[75%]">
                       <h2 className="header-two">Get in touch</h2>
                       <p>Our  team would love to hear from you.</p>
