@@ -18,7 +18,7 @@ import Slider from "react-slick"
 import { Checkbox } from "@material-tailwind/react";
 import Join from "../../Components/Join";
 import emailjs from '@emailjs/browser';
-import {useRef} from "react";
+// import {useRef} from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -140,14 +140,21 @@ export default function Index() {
         ],
       };
 
-      const getform = useRef();
+    // const getform = useRef();
 
-      const sendEmail = (e) => {
+    //   const sendEmail = () => {
+    //   }
+
+      const sendEmail = (e: { preventDefault: () => void }) => {
         e.preventDefault();
-    
+
+        // useEffect(()=>{
+        //   let ctx = getform.current
+        // },[])
+        
         emailjs.sendForm('info@vroom', 
         'template_2t1jlge',
-        getform.current, 
+        // getform.current, 
          'W1Sr8ibFIQ75N7lgt')
           .then((result) => {
               console.log(result.text);
@@ -159,9 +166,7 @@ export default function Index() {
           });
       };
 
-    //   const cardstyle = {
-    //     backgroundColor: '#000000',
-    //   }
+  
     
   return (
     <div className="h-full w-full" >
@@ -352,7 +357,9 @@ export default function Index() {
                       <h2 className="header-two">Get in touch</h2>
                       <p>Our  team would love to hear from you.</p>
                       <div className="">
-                      <form ref={getform} onSubmit={sendEmail}>
+                      <form
+                    //    ref={getform}
+                        onSubmit={sendEmail}>
                             <div className="name flex flex-col lg:flex-row xl:flex-row justify-between pt-4">
                                 <div className=" w-[100%]xl:w-[50%] ">
                                     <div className="label py-2">First name</div>
