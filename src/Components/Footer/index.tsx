@@ -1,8 +1,13 @@
 // import { NavLink } from "react-router-dom"
 import logo from "../../assets/icons/vroom.svg";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function index() {
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+}
   return (
     <div className=' h-[100vh] md:h-[60vh] lg:h-[80vh] xl:h-[80vh] w-full bg-brand600 flex justify-center items-center'>
         <div className=' h-[80%] w-[90%]'>
@@ -37,9 +42,9 @@ export default function index() {
                         </div>
                         <div className="w-[100%] h-[100%] md:w-[50%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] flex items-center md:justify-end lg:justify-end xl:justify-end  ">
                             <span className="text-white">
-                              <NavLink to="/"><h6>Home</h6></NavLink>
-                              <a href="www.vroomng.com/about"><h6>About us</h6></a>
-                              <NavLink to="/contact"><h6>Contact</h6></NavLink>
+                              <NavLink to="/" onClick={scrollToTop}><h6>Home</h6></NavLink>
+                              <Link to="/about" onClick={scrollToTop}><h6>About us</h6></Link>
+                              <NavLink to="/contact" onClick={scrollToTop}><h6>Contact</h6></NavLink>
                             </span>
                         </div>
                 </div>

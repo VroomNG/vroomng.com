@@ -3,8 +3,6 @@ import Join from "../../Components/Join";
 import smile from "../../assets/images/smile.png";
 import emailjs from '@emailjs/browser';
 import { useState} from "react";
-// import { NotificationManager} from 'react-notifications';
-
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -50,7 +48,6 @@ export default function Index() {
                       <div className="">
                       <form 
                         id="inputRef"
-                    //   ref={inputRef}
                        onSubmit={sendEmail}>
                             <div className="name flex flex-col lg:flex-row xl:flex-row justify-between pt-4">
                                 <div className=" w-[100%]xl:w-[50%] ">
@@ -82,7 +79,7 @@ export default function Index() {
                             <div className="pt-2">
                                 <div className="label py-2">Phone Number</div>
                                 <div className="w-[100%] ">
-                                    <input placeholder="First name" type="phoneNumber" name="number" onChange={(e) => setPhoneNumber(e.target.value)}
+                                    <input placeholder="Phone Number" type="phoneNumber" name="number" onChange={(e) => setPhoneNumber(e.target.value)}
                                     value={phoneNumber}
                                      className="border-2 rounded-lg p-2 px-4 w-[100%] border-gray300  bg-transparent" />
                                 </div>
@@ -99,7 +96,7 @@ export default function Index() {
                                 <Checkbox color="indigo"  crossOrigin={checkbox}  onChange={() => setCheckbox(true)} />
                                 You agree to our friendly <a href="#"> privacy policy</a>.
                             </div> */}
-                            <div className="btn">
+                            <div className="btn mt-6">
                                 <button className="bg-brand600 text-white p-2 w-[100%] rounded-lg" type="submit">
                                     send a message
                                 </button>
