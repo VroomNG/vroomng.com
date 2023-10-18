@@ -416,6 +416,7 @@ export default function Index() {
                             {/* <div className="flex items-center ">
                                 <Checkbox color="indigo"  crossOrigin={checkbox}  onChange={() => setCheckbox(true)} />
                                 You agree to our friendly <a href="#"> privacy policy</a>.
+                                k
                             </div> */}
                             <div className="btn">
                                 <button className="bg-brand600 text-white p-2 w-[100%] rounded-lg" type="submit">
