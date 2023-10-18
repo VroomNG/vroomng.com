@@ -38,7 +38,7 @@ export default function index() {
                         <div className="w-[100%] h-[100%] md:w-[50%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] flex items-center md:justify-end lg:justify-end xl:justify-end  ">
                             <span className="text-white">
                               <NavLink to="/"><h6>Home</h6></NavLink>
-                              <NavLink to="/about"><h6>About us</h6></NavLink>
+                              <a href="https://www.vroomng.com/about"><h6>About us</h6></a>
                               <NavLink to="/contact"><h6>Contact</h6></NavLink>
                             </span>
                         </div>
