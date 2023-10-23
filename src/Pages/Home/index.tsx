@@ -265,7 +265,7 @@ export default function Index() {
          </div>
       </section>
 
-      <section className="h-[110vh] flex justify-center items-center  bg-green-50">
+      <section className="our-story h-[100vh] flex justify-center items-center  bg-green-50">
       <div className="w-[90%] h-[90%] flex flex-col  2xl:flex-row">
              <div className="flex h-[20%]">
                 <div className="w-[100%] md:w-[75%] lg:w-[75%] xl:w-[75%]">
@@ -276,11 +276,11 @@ export default function Index() {
              </div>
             <div className=" h-[70%]  xl:mt-12" >
                 <div className=" flex flex-col lg:flex-row xl:flex-row  w-[100%]">
-                   <div className="w-[100%] lg:w-[50%] bg-green-400 xl:w-[50%] 2xl:w-[50%]">
+                   <div className="w-[100%] hidden md:block lg:block xl:block 2xl:block lg:w-[50%] bg-green-400 xl:w-[50%] 2xl:w-[50%]">
                     <img src={carman} className="object-cover w-[100%] h-[100%]" />
                    </div>
                    <div className="w-[100%] lg:w-[50%] flex-col flex justify-start xl:w-[50%] 2xl:w-[50%] pt-16 lg:p-10 xl:p-10 2xl:p-10">
-                        <p className="text-[16px] text-justify  leading-[20px] ">
+                        <p className="text-desc text-[16px] text-justify  leading-[20px] ">
                             At Vroom, our journey is a testament to the commitment we have for redefining the way we move. Since our inception, we've achieved significant milestones, and we're just getting started:
                             <ul className="bullet-list py-4">
                             <li className="ml-8 py-2">Embracing a vibrant community of passengers and drivers, we've grown together, sharing in the joys of every journey</li>
@@ -295,7 +295,7 @@ export default function Index() {
         </div>
       </section>
     
-      <section className="h-[120vh] xl:h-[100vh] flex justify-center items-center ">
+      <section className="how-it-works h-[120vh] bg-red-400 xl:h-[100vh] flex justify-center items-center ">
       <div className="w-[100%] h-[100%]">
              <div className="flex items-center justify-center w-full h-[10%] xl:h-[20%]">
                 <div className="w-[90%] flex-col justify-center ">
@@ -350,7 +350,7 @@ export default function Index() {
                    </div>
                 </div>
                 <div className="w-[100%] h-[40%] xl:h-[100%] xl:w-[50%] flex xl:block items-center justify-center  ">
-                    <img src={home} className="z-[999] object-cover md:hidden mt-8  w-48 xl:block xl:mt-[6rem] xl:ml-8 xl:absolute xl:w-[20%] xl:h-[65%]"/>
+                    <img src={home} className="mobile-fix  z-[999] object-cover md:hidden lg:mt-8 w-48 xl:block xl:mt-[6rem] xl:ml-8 xl:absolute xl:w-[20%] xl:h-[65%]"/>
                     <img src={mockup} className=" ml-[20%] h-[100%] w-[80%] hidden md:block lg:block xl:block"/>
                 </div>
             </div>

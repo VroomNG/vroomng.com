@@ -313,3 +313,27 @@ WELCOME TO MEDIA SCREENS
     margin-left: -22em;
   }
 }
+
+/* Home */
+
+
+@media screen and (min-width:375px) and (max-width: 400px) {
+  .how-it-works {
+    padding-top: 16px;
+    height: 150vh;
+    background-color: green;
+  }
+ 
+  .our-story  {
+    background-color: orange;
+  }
+
+  .our-story .text-desc {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .mobile-fix {
+    margin-top: 80px;
+  }
+}
