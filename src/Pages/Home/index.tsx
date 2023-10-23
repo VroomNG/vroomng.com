@@ -295,7 +295,7 @@ export default function Index() {
         </div>
       </section>
     
-      <section className="how-it-works xm:bg-green-200 xm:h-[150vh] xm:pt-16 md:pt-0 lg:pt-0 xl:pt-0  h-[120vh] xl:h-[100vh] flex justify-center items-center ">
+      <section className="how-it-works xm:bg-blue-400 sm:bg-red-600 md:bg-purple-300 2xm:h-[150vh] xm:h-[150vh] h-[120vh] md:h-[100vh] xl:h-[100vh] 2xm:pt-16 md:pt-0 lg:pt-0 xl:pt-0  flex justify-center items-center ">
       <div className="w-[100%] h-[100%]">
              <div className="flex items-center justify-center w-full h-[10%] xl:h-[20%]">
                 <div className="w-[90%] flex-col justify-center ">
