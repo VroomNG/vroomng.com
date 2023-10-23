@@ -185,7 +185,7 @@ export default function Index() {
                     {/* <img src={vector} className="hidden lg:block z-[100] w-[40%] mt-[160%] md:w-[20%] md:mt-[40%] md:ml-[40%] lg:w-[20%]  lg:mt-[40%] lg:ml-[40%] xl:mt-[35%] absolute"/> */}
                     <div className="flex md:justify-center items-center mt-8 md:mt-0 lg:mt-0 xl:mt-0 w-[100%] md:w-[100%] lg:w-[55%] xl:w-[55%]">
                         <div className=" h-[90%] flex flex-col justify-center w-[100%] md:w-[90%] md:h-[60%] mt-12 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
-                            <h1 className="max-header text-center lg:text-left"> Safe, Simple and Exciting Way to Ride. </h1>
+                            <h1 className="max-header text-center lg:text-left"> Safe, Simple and Exciting Way to Ride. #xenxei </h1>
                             <div className="w-[100%] py-4 ">
                                 <p className="text-center lg:text-left">
                                     Whether you're heading out or hitting the road, Vroom is your go-to travel companion. Passengers, enjoy seamless rides with our trusted drivers. Drivers, embark on a rewarding journey with us. Your next adventure awaits!
@@ -364,7 +364,7 @@ export default function Index() {
         <div className="w-[100%] h-[100%] md:h-[60%] lg:h-[100%] xl:h-[100%]  xl:w-[50%] flex items-center justify-center ">
                     <div className="contactform w-[100%] h-[95%] lg:w-[75%] xl:w-[75%]">
                       <h2 className="header-two">Get in touch</h2>
-                      <p>Our  team would love to hear from you.</p>
+                      <p>Our team would love to hear from you.</p>
                       <div className="">
                       <form 
                         id="inputRef"
