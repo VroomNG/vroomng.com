@@ -22,7 +22,7 @@ const btn = [
 export default function index() {
   return (
     <div>
-         <section className=" h-[75vh] md:h-[90vh]  lg:h-[80vh] xl:h-[80vh] mt-5 flex justify-center items-center">
+        <section className=" 2xm:h-[80%] md:h-[90vh]  lg:h-[80vh] xl:h-[80vh] mt-5 flex justify-center items-center">
         <div className="rounded-xl w-[90%] h-[90%] bg-brand400 flex items-center justify-center">
             <div className="flex flex-col  lg:flex-row xl:flex-row w-[100%] h-[100%] md:w-[90%] lg:w-[90%] xl:w-[90%] ">
                 <div className="w-[100%] h-[50%] order-2  lg:w-[50%] lg:h-[100%]  xl:w-[50%] xl:h-[100%] lg:order-1 xl:order-1  flex items-end justify-end md:items-center md:justify-center lg:justify-start xl:justify-start lg:items-end xl:items-end  ">

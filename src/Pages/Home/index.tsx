@@ -295,7 +295,8 @@ export default function Index() {
         </div>
       </section>
     
-      <section className="how-it-works xm:bg-blue-400 sm:bg-red-600 md:bg-purple-300 2xm:h-[150vh] xm:h-[150vh] h-[120vh] md:h-[100vh] xl:h-[100vh] 2xm:pt-16 md:pt-0 lg:pt-0 xl:pt-0  flex justify-center items-center ">
+      <section className="how-it-work 2xm:h-[150vh] xm:h-[150vh]
+         h-[120vh] md:h-[100vh] xl:h-[100vh] 2xm:pt-16 md:pt-0 lg:pt-0 xl:pt-0  flex justify-center items-center ">
       <div className="w-[100%] h-[100%]">
              <div className="flex items-center justify-center w-full h-[10%] xl:h-[20%]">
                 <div className="w-[90%] flex-col justify-center ">
@@ -305,12 +306,12 @@ export default function Index() {
              </div>
             <div className=" h-[80%] flex flex-col xl:flex-row" >
                 <div className="w-[100%] h-[60%] xl:w-[50%] xl:h-[100%] flex items-center justify-center">
-                    <div className="mx-4">
-                        <div className="w-1 bg-purple-800 h-[150px]"></div>
-                        <div className="w-1 bg-gray-400 h-[150px] "></div>
-                        <div className="w-1 bg-gray-400 h-[150px]"></div>
+                    <div className="mx-4 h-[100%] 2xm:pt-10 xm:pt-10 md:pt-4 lg:pt-2">
+                        <div className="w-1 bg-purple-800 xm:h[100px] h-[120px]"></div>
+                        <div className="w-1 bg-gray-400   xm:h[100px] h-[120px] "></div>
+                        <div className="w-1 bg-gray-400   xm:h[100px] h-[120px]"></div>
                     </div>
-                   <div className=" w-[85%] h-[90%]">
+                   <div className=" w-[85%] h-[90%] ">
                     <span>
                         <div className="py-1">
                             <h5 className="header-five">Select your destination</h5>
@@ -350,7 +351,7 @@ export default function Index() {
                    </div>
                 </div>
                 <div className="w-[100%] h-[40%] xl:h-[100%] xl:w-[50%] flex xl:block items-center justify-center  ">
-                    <img src={home} className="mobile-fix  z-[999] object-cover md:hidden lg:mt-8 w-48 xl:block xl:mt-[6rem] xl:ml-8 xl:absolute xl:w-[20%] xl:h-[65%]"/>
+                    <img src={home} className="mobile-fix  z-[999] object-cover 2xm:w-[140px] xm:w-[180px] sm:w-[200px] md:hidden lg:mt-8 w-48 xl:block xl:mt-[6rem] xl:ml-8 xl:absolute xl:w-[20%] xl:h-[65%]"/>
                     <img src={mockup} className=" ml-[20%] h-[100%] w-[80%] hidden md:block lg:block xl:block"/>
                 </div>
             </div>
@@ -359,7 +360,7 @@ export default function Index() {
 
      <Join/>  
      
-       <section className="h-[100vh] md:h-[70vh] lg:h-[120vh] xl:h-[120vh] 2xl:h-[120vh] flex flex-col justify-center items-center">
+       <section className="2xm:h-[120vh] xm:h-[110vh] sm:h-[100vh] md:h-[70vh] lg:h-[120vh] xl:h-[120vh] 2xl:h-[120vh] flex flex-col justify-center items-center">
         <div className="w-[90%] h-[80%] flex flex-col xl:flex-row">
         <div className="w-[100%] h-[100%] md:h-[60%] lg:h-[100%] xl:h-[100%]  xl:w-[50%] flex items-center justify-center ">
                     <div className="contactform w-[100%] h-[95%] lg:w-[75%] xl:w-[75%]">
