@@ -185,7 +185,7 @@ export default function Index() {
                     {/* <img src={vector} className="hidden lg:block z-[100] w-[40%] mt-[160%] md:w-[20%] md:mt-[40%] md:ml-[40%] lg:w-[20%]  lg:mt-[40%] lg:ml-[40%] xl:mt-[35%] absolute"/> */}
                     <div className="flex md:justify-center items-center mt-8 md:mt-0 lg:mt-0 xl:mt-0 w-[100%] md:w-[100%] lg:w-[55%] xl:w-[55%]">
                         <div className=" h-[90%] flex flex-col justify-center w-[100%] md:w-[90%] md:h-[60%] mt-12 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
-                            <h1 className="max-header text-center lg:text-left"> Safe, Simple and Exciting Way to Ride. #xenxei </h1>
+                            <h1 className="max-header text-center lg:text-left"> Safe, Simple and Exciting Way to Ride. </h1>
                             <div className="w-[100%] py-4 ">
                                 <p className="text-center lg:text-left">
                                     Whether you're heading out or hitting the road, Vroom is your go-to travel companion. Passengers, enjoy seamless rides with our trusted drivers. Drivers, embark on a rewarding journey with us. Your next adventure awaits!
@@ -265,7 +265,7 @@ export default function Index() {
          </div>
       </section>
 
-      <section className="our-story h-[100vh] flex justify-center items-center  bg-green-50">
+      <section className="our-story h-[110vh] flex justify-center items-center  bg-green-50">
       <div className="w-[90%] h-[90%] flex flex-col  2xl:flex-row">
              <div className="flex h-[20%]">
                 <div className="w-[100%] md:w-[75%] lg:w-[75%] xl:w-[75%]">
@@ -295,7 +295,7 @@ export default function Index() {
         </div>
       </section>
     
-      <section className="how-it-works h-[120vh] bg-red-400 xl:h-[100vh] flex justify-center items-center ">
+      <section className="how-it-works xm:bg-green-200 xm:h-[150vh] xm:pt-16 md:pt-0 lg:pt-0 xl:pt-0  h-[120vh] xl:h-[100vh] flex justify-center items-center ">
       <div className="w-[100%] h-[100%]">
              <div className="flex items-center justify-center w-full h-[10%] xl:h-[20%]">
                 <div className="w-[90%] flex-col justify-center ">
