@@ -179,9 +179,9 @@ export default function Index() {
     
   return (
     <div className="h-full w-full" >
-       <header className="pattern h-[110vh] md:h-[110vh] lg:h-[120vh] xl:h-[120vh] 2xl:h-[120vh]">
-            <div className="flex justify-center pt-[10%] xl:pt-[8%] 2xl:pt-0 overflow-hidden pb-[5%] w-full h-full">
-                <div className="container flex flex-wrap lg:flex-nowrap xl:flex-nowrap w-[90%]">
+       <header className="pattern 2xm:h-[110vh] md:h-[110vh] lg:h-[120vh] xl:h-[120vh] 2xl:h-[120vh]">
+            <div className="flex  justify-center pt-[10%] xl:pt-[8%] 2xl:pt-0 overflow-hidden pb-[5%] w-full h-full">
+                <div className="container  flex flex-wrap lg:flex-nowrap xl:flex-nowrap w-[95%]">
                     {/* <img src={vector} className="hidden lg:block z-[100] w-[40%] mt-[160%] md:w-[20%] md:mt-[40%] md:ml-[40%] lg:w-[20%]  lg:mt-[40%] lg:ml-[40%] xl:mt-[35%] absolute"/> */}
                     <div className="flex md:justify-center items-center mt-8 md:mt-0 lg:mt-0 xl:mt-0 w-[100%] md:w-[100%] lg:w-[55%] xl:w-[55%]">
                         <div className=" h-[90%] flex flex-col justify-center w-[100%] md:w-[90%] md:h-[60%] mt-12 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
@@ -265,7 +265,7 @@ export default function Index() {
          </div>
       </section>
 
-      <section className="our-story h-[110vh] flex justify-center items-center  bg-green-50">
+      <section className="our-story h-[110vh] flex justify-center items-center ">
       <div className="w-[90%] h-[90%] flex flex-col  2xl:flex-row">
              <div className="flex h-[20%]">
                 <div className="w-[100%] md:w-[75%] lg:w-[75%] xl:w-[75%]">
@@ -276,7 +276,7 @@ export default function Index() {
              </div>
             <div className=" h-[70%]  xl:mt-12" >
                 <div className=" flex flex-col lg:flex-row xl:flex-row  w-[100%]">
-                   <div className="w-[100%] hidden md:block lg:block xl:block 2xl:block lg:w-[50%] bg-green-400 xl:w-[50%] 2xl:w-[50%]">
+                   <div className="w-[100%] hidden md:block lg:block xl:block 2xl:block lg:w-[50%]  xl:w-[50%] 2xl:w-[50%]">
                     <img src={carman} className="object-cover w-[100%] h-[100%]" />
                    </div>
                    <div className="w-[100%] lg:w-[50%] flex-col flex justify-start xl:w-[50%] 2xl:w-[50%] pt-16 lg:p-10 xl:p-10 2xl:p-10">
@@ -332,7 +332,6 @@ export default function Index() {
                         </div>
                         <span>
                         {/* <h5 className="header-five">Learn more</h5>  */}
-
                         </span>
                     </span>
                     <span>
